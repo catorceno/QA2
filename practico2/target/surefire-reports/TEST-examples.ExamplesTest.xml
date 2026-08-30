@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="15.92" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\camila\Downloads\QA2\practico2\target\test-classes;C:\Users\camila\Downloads\QA2\practico2\target\classes;C:\Users\camila\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\camila\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\camila\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\camila\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\camila\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\camila\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\camila\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\camila\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\camila\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\camila\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\camila\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\camila\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\camila\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\camila\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\camila\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\camila\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\camila\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\camila\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\camila\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\camila\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\camila\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\camila\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\camila\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\camila\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\camila\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\camila\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\camila\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\camila\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\camila\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\camila\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\camila\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\camila\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\camila\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\camila\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\camila\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\camila\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\camila\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\camila\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\camila\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\camila\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\camila\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\camila\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\camila\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\camila\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\camila\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\camila\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\camila\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\camila\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\camila\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/La_Paz"/>
+    <property name="user.country.format" value="BO"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21.0.11\bin"/>
+    <property name="sun.java.command" value="C:\Users\camila\AppData\Local\Temp\surefire16919556468203665928\surefirebooter-20260826111458532_3.jar C:\Users\camila\AppData\Local\Temp\surefire16919556468203665928 2026-08-26T11-14-58_314-jvmRun1 surefire-20260826111458532_1tmp surefire_0-20260826111458532_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\camila\Downloads\QA2\practico2\target\test-classes;C:\Users\camila\Downloads\QA2\practico2\target\classes;C:\Users\camila\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\camila\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\camila\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\camila\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\camila\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\camila\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\camila\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\camila\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\camila\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\camila\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\camila\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\camila\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\camila\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\camila\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\camila\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\camila\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\camila\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\camila\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\camila\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\camila\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\camila\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\camila\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\camila\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\camila\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\camila\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\camila\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\camila\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\camila\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\camila\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\camila\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\camila\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\camila\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\camila\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\camila\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\camila\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\camila\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\camila\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\camila\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\camila\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\camila\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\camila\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\camila\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\camila\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\camila\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\camila\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\camila\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\camila\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\camila\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\camila\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\camila\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\camila\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\camila\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\camila"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-04-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21.0.11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\camila\Downloads\QA2\practico2"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\camila\AppData\Local\Temp\surefire16919556468203665928\surefirebooter-20260826111458532_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.11+9-LTS-211"/>
+    <property name="user.name" value="camila"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\camila\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\camila\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.11"/>
+    <property name="user.dir" value="C:\Users\camila\Downloads\QA2\practico2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="es"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21.0.11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\camila\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\camila\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Java\jdk-21.0.11\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.8.9-hotspot\bin;C:\Program Files\Python313\Scripts\;C:\Program Files\Python313\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\mingw64\bin;C:\Program Files\MongoDB\Server\8.0\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\apache-maven-3.9.15\bin;C:\Users\camila\AppData\Local\Microsoft\WindowsApps;C:\Users\camila\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\camila\.dotnet\tools;C:\Users\camila\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;c:\Users\camila\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.11+9-LTS-211"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="15.88">
+    <system-out><![CDATA[11:15:01.504 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:15:01.512 [main] WARN  com.intuit.karate.Suite - failed to backup existing dir: target\karate-reports
+11:15:01.521 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+11:15:03.540 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:15:03.540 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+11:15:03.540 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+11:15:03.540 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:15:03.540 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+11:15:04.241 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/comments
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:15:04.241 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/posts
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:15:04.241 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 86
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Charlena Frami","email":"raymon3@test.com"}
+
+11:15:04.241 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 82
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Justin Upton","email":"noel0@test.com"}
+
+11:15:04.241 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:15:06.473 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2220
+1 < 200
+1 < Date: Wed, 26 Aug 2026 15:15:04 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-PatcoZs5urmZfQ6+7in6fQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < etag: W/"5d156870401d382847ee5923e855410c"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/comments?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/comments?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 294
+1 < x-pagination-total: 2935
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-request-id: 5aed55ab-5a45-41e9-8b63-63d69657563b
+1 < x-runtime: 0.069709
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ASlncXewjnpY86PysaKqAxsSJ8kaV9iXhBxMfl2H4Wi%2FuMRm2ISOouMXKs92P1M02OWCjat8pxrXfx%2BVeMTIV5NcJYFYMe6rF6o9juyVOsMxiW2pa4aikKhi8zw%2FXrw%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a313ca2ecf79a6ba-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":195349,"post_id":289667,"name":"Vasundhara Bhat","email":"bhat_vasundhara@heathcote.example","body":"Quam velit dolore. Architecto consequatur et. Totam ut inventore. Facilis maxime est."},{"id":195348,"post_id":289667,"name":"Rev. Chaaruchandra Mehra","email":"mehra_chaaruchandra_rev@greenfelder-lueilwitz.example","body":"Eius dolores laboriosam. Perferendis aut minus. Possimus distinctio eum."},{"id":195345,"post_id":289661,"name":"Jagathi Khanna","email":"khanna_jagathi@nolan.example","body":"Perferendis suscipit laboriosam."},{"id":195331,"post_id":289654,"name":"Trisha Sethi","email":"sethi_trisha@wilkinson.example","body":"Non alias eos."},{"id":195330,"post_id":289653,"name":"Saroja Nayar","email":"saroja_nayar@marquardt.example","body":"Dolores nulla voluptatem. Debitis eos qui. Vitae consequatur error."},{"id":195328,"post_id":289651,"name":"Garuda Ganaka","email":"ganaka_garuda@cremin.test","body":"Adipisci non voluptatibus."},{"id":195327,"post_id":289650,"name":"Bhushit Acharya","email":"bhushit_acharya@dickens.example","body":"Reprehenderit laudantium officiis. Sequi mollitia in. Repellendus vero in. Quia delectus dolorem."},{"id":195326,"post_id":289650,"name":"Amb. Dipendra Guneta","email":"guneta_amb_dipendra@frami.test","body":"Eum eos eos. Ut quia occaecati."},{"id":195325,"post_id":289646,"name":"Eekalabya Prajapat","email":"eekalabya_prajapat@stamm.example","body":"Illum voluptatem reprehenderit."},{"id":195324,"post_id":289645,"name":"Ghanshyam Varman","email":"ghanshyam_varman@langosh.test","body":"Minima dolore voluptatem. Quia aut omnis. Ea quasi excepturi."}]
+
+11:15:06.477 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2234
+1 < 200
+1 < Date: Wed, 26 Aug 2026 15:15:05 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-GwyPpRXuKikzWMlE0inyFA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < etag: W/"386a7d33ed36f11ed76f62ce6c233dcb"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-request-id: e23b78bd-e3f5-4664-adb2-92fe218c7a20
+1 < x-runtime: 0.254087
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9DJ6oD6s4HVpLJvwZ8QeQPhyC12P7O94XJRNqON1EQ2orqmHjxdktJdTulAfjNzDZNuwZhvx4Xvz3iJt8LcCp2483IyLiLlR2RCM8CL2rYpGul4Id%2Bt36uKB6BiZ0Yk%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a313ca2ebd5f5530-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8593470,"name":"Roderick Prosacco","email":"prudence58@test.com","gender":"male","status":"active"},{"id":8593469,"name":"Gilberte Purdy","email":"melina8@test.com","gender":"male","status":"active"},{"id":8593467,"name":"Salvatore Ryan","email":"ronny90@test.com","gender":"male","status":"active"},{"id":8593463,"name":"Donnie Hansen","email":"jason71@test.com","gender":"male","status":"active"},{"id":8593462,"name":"Porter Hauck","email":"booker81@test.com","gender":"male","status":"active"},{"id":8593461,"name":"Alec Sauer","email":"alaina97@test.com","gender":"male","status":"active"},{"id":8593445,"name":"Ruthie Padberg","email":"olevia32@test.com","gender":"male","status":"active"},{"id":8593444,"name":"Aleen Cummings","email":"zora78@test.com","gender":"male","status":"active"},{"id":8593443,"name":"Jamal Paucek","email":"jules14@test.com","gender":"male","status":"active"},{"id":8593437,"name":"Shawnta Schimmel","email":"nathaniel84@test.com","gender":"male","status":"active"}]
+
+11:15:06.501 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:15:06.501 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+11:15:06.626 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 88
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Morgan Hermann","email":"jaleesa47@test.com"}
+
+11:15:06.634 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 87
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Alonzo Roob","email":"annamaria43@test.com"}
+
+11:15:06.953 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 2709
+1 < 201
+1 < Date: Wed, 26 Aug 2026 15:15:05 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 95
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-+/sYYqMTHi60fvLBiP5leg=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < etag: W/"e3ab44e2cedf5aec5e6f3e56f19671d8"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < location: https://gorest.co.in/public/v2/users/8593506
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-request-id: 0b475176-f90a-46ba-b7fd-e31cb991a27d
+1 < x-runtime: 0.072486
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1kJyL4LLl6083%2Blgre%2BJoSAjakEhnTZNxJRp2wU%2BdcRZTNUwBDf%2BS5c9M7E1t5nKQ7wVbX4WbJ05U9FbmYQGjU30sU2JyOG%2BFaDxrSO0vwCYwc4Ihm5jNNWjRlGA%2FEk%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a313ca31fe09f171-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8593506,"name":"Justin Upton","email":"noel0@test.com","gender":"male","status":"active"}
+
+11:15:07.443 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 3200
+1 < 201
+1 < Date: Wed, 26 Aug 2026 15:15:05 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 99
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-5HUc+SmePMmMhs8HXotNeQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < etag: W/"9b98640bc11180fe4127d0e152f5409f"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < location: https://gorest.co.in/public/v2/users/8593507
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-request-id: bb55bbda-7e56-4404-80f7-085de49535e5
+1 < x-runtime: 0.058151
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NzX5JNO%2FEusXt3C%2FsAfRv57n%2BdHVCU13LeVtKeke3VZoJ8qBhwZyP7jdeC%2Fic%2BvW3o2RT7c2R%2Fbpxl4uZZGl7bWqGY%2FIDdUKl32kejp0VANZV2e79YoQk4ClMzBAX7g%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a313ca353b73f53b-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8593507,"name":"Charlena Frami","email":"raymon3@test.com","gender":"male","status":"active"}
+
+11:15:07.480 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > GET https://gorest.co.in/public/v2/users/8593507
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+---------------------------------------------------------
+feature: classpath:examples/gorest/comments.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,8600
+---------------------------------------------------------
+
+11:15:07.836 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/gorest/comments.feature
+11:15:09.231 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2600
+1 < 201
+1 < Date: Wed, 26 Aug 2026 15:15:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 101
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-m2v39sHlQGb788hI5W4nrw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < etag: W/"4bc167dbfc942c83fe010554c4e7a28b"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < location: https://gorest.co.in/public/v2/users/8593509
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 297
+1 < x-ratelimit-reset: 0
+1 < x-request-id: f659c405-2afd-4fa0-9a09-d75b6e04912d
+1 < x-runtime: 0.053577
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BXlR1O5t3TaBJYbzNbDcwT0cZ3PeWo%2BPrCZsw7kLnTl1EdD%2BTq3xwfQXiDHDCEBCOAFY7BlXnbF1fCEhYs0o%2BuqRi3boS%2FPHNU7XkGZFf3oQH19nFyCJLm%2BO4srQ3NM%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a313ca38bc92dfae-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8593509,"name":"Morgan Hermann","email":"jaleesa47@test.com","gender":"male","status":"active"}
+
+11:15:09.252 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8593509
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:15:09.548 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2910
+1 < 201
+1 < Date: Wed, 26 Aug 2026 15:15:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 100
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-WpItBorahVEN/NCRe5UPug=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < etag: W/"f5d2c4aa4d62e8f637cde5723f518523"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < location: https://gorest.co.in/public/v2/users/8593508
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-request-id: 0275ed96-d2b8-442f-859f-922be45bceb9
+1 < x-runtime: 0.055266
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TgaBQFRM7Iq2DM48WTSHITs2iI%2BhRxzq1Ap%2FsLZZhHTVIcKFfQYhaOHdQfAsOHe%2Fhb0bDA2gqBSLstHS5ClKoe0s1iDVDfZHUb9ciO0k6Y%2FU97n9qYVvwT4rwuc1TLs%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a313ca38ba897ff0-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8593508,"name":"Alonzo Roob","email":"annamaria43@test.com","gender":"male","status":"active"}
+
+11:15:09.562 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+2 > PUT https://gorest.co.in/public/v2/users/8593508
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+11:15:09.884 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 5639
+1 < 200
+1 < Date: Wed, 26 Aug 2026 15:15:06 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-E7jpNqPiNat5LQ58k+7TsQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < etag: W/"892143537828a6dfcf8d966e4784d634"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/posts?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/posts?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 301
+1 < x-pagination-total: 3007
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-request-id: f6caa756-aa10-4dc8-9510-413486522720
+1 < x-runtime: 0.042614
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lW%2B2%2BgWhN9l1KLW8WLf9A5zFEZ3G7Yxa9FPOCTdyYjB9J9qIM%2BybfkeBz%2FmUBO3N9628mAwGWST8J7i8grTqMYRGO%2FyZqbZOmu6geNpkpupAGirlQifwsQ6XwplC0%2FY%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a313ca3b5ef900ed-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":289673,"user_id":8593333,"title":"Fuga ater cerno texo ocer.","body":"Canonicus eaque certe. Degero adulescens stella. Alveus corrigo congregatio. Autem basium cinis. Appono molestias totus. Ab quam copiose. Explicabo venio caelum. Aut undique speculum. Tantillus abstergo accusator. Anser somnus varietas. Vere cruciamentum volo."},{"id":289669,"user_id":8593328,"title":"In admoneo adsuesco ventosus subnecto amaritudo tolero delibero.","body":"Asperiores ut bos. Bene verumtamen armarium. Vado totam pel. Cibo toties averto. Textilis toties creber. Conitor vita cibo. Vero tenuis talis. Eos verecundia coerceo. Abeo compello copia. Comparo pauci sint. Confugo qui universe."},{"id":289666,"user_id":8593323,"title":"Vero temperantia repudiandae admoneo vinculum denuo tamen adultus.","body":"Attollo absorbeo aestas. Nemo statim non. Correptius et tabula. Commodi deprecator templum. Vae ratione cibo. Excepturi pariatur solum. Arguo venio vorago. Nihil ipsam utroque. Sit clementia thermae. Modi vinculum denique. Atqui est coruscus. Agnitio absconditus asper. Ver cohors bos. Tolero auris decumbo. Quis cunabula debeo. Tergum ab pel. Suppono tenetur ceno. Tricesimus usque apto. Adulatio tego deleo."},{"id":289661,"user_id":8593320,"title":"Vicissitudo tepesco arx trans tergo suggero spoliatio.","body":"Calamitas casso culpa. Animi velut careo. Verumtamen cunctatio suscipio. Labore adsuesco deleo. Est conor voco. Veniam crustulum suppono. Sollers vilitas aduro. Nihil advoco ara. Pecco terreo tamisium. Sum spiritus comis. Vicissitudo conicio capillus. Amaritudo sto delectus. Tamdiu tabernus rerum."},{"id":289660,"user_id":8593319,"title":"Calco aspicio celo abduco cruciamentum somniculosus decor acquiro adulescens.","body":"Solus aufero desino. Iusto culpa delectus. Verbum ea dignissimos. Aduro id asporto. Porro auctor consequatur. Autem molestiae vaco. Peior in adsidue. Tenus vulariter depulso. Corona dicta degero. Volva tres suscipio. Adduco dignissimos vero. Molestias aetas iure. Aegre suasoria absque. Statim qui asper. Blandior bestia chirographum. Cohaero tantillus suggero. Utrum autem deficio. Spes vinum defungo."},{"id":289659,"user_id":8593319,"title":"Spectaculum adfero collum vulnero blanditiis harum carbo tactus apud.","body":"Animi suadeo tibi. Ascit currus commodo. Suscipit et arcesso. Callide dedecor vultuosus. Provident sunt vero. Quo apostolus denique. Et dedecor demonstro. Angulus quas excepturi. Crur arbitro sufficio. Commodi atqui aranea. Ventus debilito vir. Curso debilito agnosco. Somniculosus caveo denego. Modi desidero tabesco. Delibero sordeo cruciamentum."},{"id":289656,"user_id":8593316,"title":"Verus vinitor unde vomer compello impedit a ultio.","body":"Vel audeo cum. Civitas vallum decor. Avarus rerum thalassinus. Cunctatio utpote curiositas. Summisse atrox terra. Triduana tum deduco. Defigo audax sono. Cupio turbo angulus. Viscus aliquam benigne. Sed asper adulescens. Sunt vulgaris animus. Abduco sto tracto."},{"id":289654,"user_id":8593314,"title":"In coma fuga surculus creator aedificium cohibeo trado vilitas.","body":"Autem cicuta aspernatur. Vitiosus torqueo asperiores. Umerus sumptus statim. Causa ustulo advoco. Aetas considero rerum. Sollers aequus corrupti. Terminatio voro ater. Deprecator debeo comburo. Fugiat tricesimus adficio. Cenaculum versus ut. Cras temperantia ulterius. Aut condico adamo. Temeritas defaeco synagoga. Vesco delectatio terga. Valens cruentus decens."},{"id":289652,"user_id":8593311,"title":"Deinde adopto certo vulticulus cattus ipsum rerum optio.","body":"Vaco tero adulatio. Defluo curso cogo. Desparatus deputo et. Absens sono tempora. Dolor vesper spero. Optio cresco adfectus. Ulterius aufero voluptatem. Pauci voluptatem tergiversatio. Adulatio caput vobis. Tabesco triginta vilis."},{"id":289651,"user_id":8593310,"title":"Culpo talis audeo sopor brevis sodalitas.","body":"Volva tergiversatio villa. Solvo temperantia debilito. Atrocitas qui tyrannus. Charisma acerbitas cursim. Aliquam civitas taceo. Esse demergo creber. Comminor voveo clam. Volva theologus ceno. Vulgo similique sed. Acidus ante adipisci. Spoliatio curvus circumvenio."}]
+
+---------------------------------------------------------
+feature: classpath:examples/gorest/posts.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 6,2829
+---------------------------------------------------------
+
+11:15:10.268 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/gorest/posts.feature
+11:15:10.401 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1148
+2 < 204
+2 < Date: Wed, 26 Aug 2026 15:15:08 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-5PTCNzt0jxa4wrtWZO4p1w=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-request-id: 016afbb5-1b37-4849-bc8b-0a0c82de797b
+2 < x-runtime: 0.070266
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=13,cfOrigin;dur=319
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=lyQji%2BsHzcXFXgLfC1xH%2Bwgnjm%2BQHvSSDrAsiZKlFvB1%2Bor0mJmtCRb8JWEbmo8TDtSKWC%2FesJYvXDkVVxiE3nCDs0GxvmkiYb%2BI2o9%2FuwhIYBjVlzD%2Bj8o9DhM6X6c%3D"}]}
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: a313ca4acbb6f1da-GRU
+2 < alt-svc: h3=":443"; ma=86400
+
+
+11:15:11.808 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2244
+2 < 200
+2 < Date: Wed, 26 Aug 2026 15:15:10 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-t/lorrY/pDTR3aQzp1imDA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < etag: W/"f5d2c4aa4d62e8f637cde5723f518523"
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-request-id: 04a002cc-8958-4409-adda-1583cf644776
+2 < x-runtime: 0.028937
+2 < x-xss-protection: 0
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < cf-cache-status: DYNAMIC
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=17,cfOrigin;dur=723
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Ut7sSLnp9%2Fqi7Q5DNXSpwLHGXdBfBlaRH647as%2BB26wMCcqzyKiNCoAPf%2BXA5dwP9Qx08a0OZOkQ2skFthxKUFMOOHRjTGx7lP%2FNl%2BZDka2CEkDb%2BivadJvZ97HMgFM%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a313ca516b0601b3-GRU
+2 < alt-svc: h3=":443"; ma=86400
+{"id":8593508,"name":"Alonzo Roob","email":"annamaria43@test.com","gender":"male","status":"active"}
+
+11:15:14.499 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 5304
+2 < 200
+2 < Date: Wed, 26 Aug 2026 15:15:11 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-M2HuyrKfTBxX2wBO2VCPZw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < etag: W/"9b98640bc11180fe4127d0e152f5409f"
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-request-id: 06f3fb02-98df-47f7-925f-8da21b9d6f64
+2 < x-runtime: 0.030677
+2 < x-xss-protection: 0
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < cf-cache-status: DYNAMIC
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=17,cfOrigin;dur=728
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WFWsh6DN4Ot0q9y%2FkvgWmPzmAp2oSw6fWPAkB9oSZK2pAcpStg5ZDs7wnlNW7dR48JHoih7OhZRLxGm9dcCpbD7CPLIiORyo%2BiKybdO3cxRzhsIfIUTz%2BlTDdeL0iVQ%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a313ca567cec11fe-GRU
+2 < alt-svc: h3=":443"; ma=86400
+{"id":8593507,"name":"Charlena Frami","email":"raymon3@test.com","gender":"male","status":"active"}
+
+---------------------------------------------------------
+feature: classpath:examples/gorest/users.feature
+scenarios:  5 | passed:  5 | failed:  0 | time: 26,3048
+---------------------------------------------------------
+
+11:15:15.254 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/gorest/users.feature
+Karate version: 1.5.0
+======================================================
+elapsed:  15,04 | threads:    5 | thread time: 35,45 
+features:     3 | skipped:    0 | efficiency: 0,47
+scenarios:    7 | passed:     7 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///C:/Users/camila/Downloads/QA2/practico2/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

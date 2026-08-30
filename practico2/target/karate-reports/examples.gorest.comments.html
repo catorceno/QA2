@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"96770b45-c24d-42b7-8b44-25c36397e797",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.gorest.comments</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-08-26 11:15:06 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Obtener Comentarios</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/gorest/comments.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">CRUD para comments</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Obtener Comentarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2860</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:15:03.545 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req_headers = {Authorization: &#39;Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">78</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;comments&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2769</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">11:15:04.241 request:
+1 &gt; GET https://gorest.co.in/public/v2/comments
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:15:06.476 response time in milliseconds: 2220
+1 &lt; 200
+1 &lt; Date: Wed, 26 Aug 2026 15:15:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-PatcoZs5urmZfQ6+7in6fQ==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; etag: W/&quot;5d156870401d382847ee5923e855410c&quot;
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-links-current: https://gorest.co.in/public/v2/comments?page=1
+1 &lt; x-links-next: https://gorest.co.in/public/v2/comments?page=2
+1 &lt; x-links-previous: 
+1 &lt; x-pagination-limit: 10
+1 &lt; x-pagination-page: 1
+1 &lt; x-pagination-pages: 294
+1 &lt; x-pagination-total: 2935
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 300
+1 &lt; x-ratelimit-remaining: 299
+1 &lt; x-ratelimit-reset: 0
+1 &lt; x-request-id: 5aed55ab-5a45-41e9-8b63-63d69657563b
+1 &lt; x-runtime: 0.069709
+1 &lt; x-xss-protection: 0
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=ASlncXewjnpY86PysaKqAxsSJ8kaV9iXhBxMfl2H4Wi%2FuMRm2ISOouMXKs92P1M02OWCjat8pxrXfx%2BVeMTIV5NcJYFYMe6rF6o9juyVOsMxiW2pa4aikKhi8zw%2FXrw%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a313ca2ecf79a6ba-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:195349,&quot;post_id&quot;:289667,&quot;name&quot;:&quot;Vasundhara Bhat&quot;,&quot;email&quot;:&quot;bhat_vasundhara@heathcote.example&quot;,&quot;body&quot;:&quot;Quam velit dolore. Architecto consequatur et. Totam ut inventore. Facilis maxime est.&quot;},{&quot;id&quot;:195348,&quot;post_id&quot;:289667,&quot;name&quot;:&quot;Rev. Chaaruchandra Mehra&quot;,&quot;email&quot;:&quot;mehra_chaaruchandra_rev@greenfelder-lueilwitz.example&quot;,&quot;body&quot;:&quot;Eius dolores laboriosam. Perferendis aut minus. Possimus distinctio eum.&quot;},{&quot;id&quot;:195345,&quot;post_id&quot;:289661,&quot;name&quot;:&quot;Jagathi Khanna&quot;,&quot;email&quot;:&quot;khanna_jagathi@nolan.example&quot;,&quot;body&quot;:&quot;Perferendis suscipit laboriosam.&quot;},{&quot;id&quot;:195331,&quot;post_id&quot;:289654,&quot;name&quot;:&quot;Trisha Sethi&quot;,&quot;email&quot;:&quot;sethi_trisha@wilkinson.example&quot;,&quot;body&quot;:&quot;Non alias eos.&quot;},{&quot;id&quot;:195330,&quot;post_id&quot;:289653,&quot;name&quot;:&quot;Saroja Nayar&quot;,&quot;email&quot;:&quot;saroja_nayar@marquardt.example&quot;,&quot;body&quot;:&quot;Dolores nulla voluptatem. Debitis eos qui. Vitae consequatur error.&quot;},{&quot;id&quot;:195328,&quot;post_id&quot;:289651,&quot;name&quot;:&quot;Garuda Ganaka&quot;,&quot;email&quot;:&quot;ganaka_garuda@cremin.test&quot;,&quot;body&quot;:&quot;Adipisci non voluptatibus.&quot;},{&quot;id&quot;:195327,&quot;post_id&quot;:289650,&quot;name&quot;:&quot;Bhushit Acharya&quot;,&quot;email&quot;:&quot;bhushit_acharya@dickens.example&quot;,&quot;body&quot;:&quot;Reprehenderit laudantium officiis. Sequi mollitia in. Repellendus vero in. Quia delectus dolorem.&quot;},{&quot;id&quot;:195326,&quot;post_id&quot;:289650,&quot;name&quot;:&quot;Amb. Dipendra Guneta&quot;,&quot;email&quot;:&quot;guneta_amb_dipendra@frami.test&quot;,&quot;body&quot;:&quot;Eum eos eos. Ut quia occaecati.&quot;},{&quot;id&quot;:195325,&quot;post_id&quot;:289646,&quot;name&quot;:&quot;Eekalabya Prajapat&quot;,&quot;email&quot;:&quot;eekalabya_prajapat@stamm.example&quot;,&quot;body&quot;:&quot;Illum voluptatem reprehenderit.&quot;},{&quot;id&quot;:195324,&quot;post_id&quot;:289645,&quot;name&quot;:&quot;Ghanshyam Varman&quot;,&quot;email&quot;:&quot;ghanshyam_varman@langosh.test&quot;,&quot;body&quot;:&quot;Minima dolore voluptatem. Quia aut omnis. Ea quasi excepturi.&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

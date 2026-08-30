@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"96770b45-c24d-42b7-8b44-25c36397e797",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>examples.gorest.posts</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-08-26 11:15:09 a. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Obtener Posts</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/gorest/posts.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">CRUD para posts</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Obtener Posts</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>6283</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://gorest.co.in/public/v2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">11:15:03.545 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def req_headers = {Authorization: &#39;Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">80</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;posts&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method Get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6194</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">11:15:04.241 request:
+1 &gt; GET https://gorest.co.in/public/v2/posts
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:15:09.888 response time in milliseconds: 5639
+1 &lt; 200
+1 &lt; Date: Wed, 26 Aug 2026 15:15:06 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-E7jpNqPiNat5LQ58k+7TsQ==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; etag: W/&quot;892143537828a6dfcf8d966e4784d634&quot;
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-links-current: https://gorest.co.in/public/v2/posts?page=1
+1 &lt; x-links-next: https://gorest.co.in/public/v2/posts?page=2
+1 &lt; x-links-previous: 
+1 &lt; x-pagination-limit: 10
+1 &lt; x-pagination-page: 1
+1 &lt; x-pagination-pages: 301
+1 &lt; x-pagination-total: 3007
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 300
+1 &lt; x-ratelimit-remaining: 298
+1 &lt; x-ratelimit-reset: 0
+1 &lt; x-request-id: f6caa756-aa10-4dc8-9510-413486522720
+1 &lt; x-runtime: 0.042614
+1 &lt; x-xss-protection: 0
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=lW%2B2%2BgWhN9l1KLW8WLf9A5zFEZ3G7Yxa9FPOCTdyYjB9J9qIM%2BybfkeBz%2FmUBO3N9628mAwGWST8J7i8grTqMYRGO%2FyZqbZOmu6geNpkpupAGirlQifwsQ6XwplC0%2FY%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a313ca3b5ef900ed-GRU
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+[{&quot;id&quot;:289673,&quot;user_id&quot;:8593333,&quot;title&quot;:&quot;Fuga ater cerno texo ocer.&quot;,&quot;body&quot;:&quot;Canonicus eaque certe. Degero adulescens stella. Alveus corrigo congregatio. Autem basium cinis. Appono molestias totus. Ab quam copiose. Explicabo venio caelum. Aut undique speculum. Tantillus abstergo accusator. Anser somnus varietas. Vere cruciamentum volo.&quot;},{&quot;id&quot;:289669,&quot;user_id&quot;:8593328,&quot;title&quot;:&quot;In admoneo adsuesco ventosus subnecto amaritudo tolero delibero.&quot;,&quot;body&quot;:&quot;Asperiores ut bos. Bene verumtamen armarium. Vado totam pel. Cibo toties averto. Textilis toties creber. Conitor vita cibo. Vero tenuis talis. Eos verecundia coerceo. Abeo compello copia. Comparo pauci sint. Confugo qui universe.&quot;},{&quot;id&quot;:289666,&quot;user_id&quot;:8593323,&quot;title&quot;:&quot;Vero temperantia repudiandae admoneo vinculum denuo tamen adultus.&quot;,&quot;body&quot;:&quot;Attollo absorbeo aestas. Nemo statim non. Correptius et tabula. Commodi deprecator templum. Vae ratione cibo. Excepturi pariatur solum. Arguo venio vorago. Nihil ipsam utroque. Sit clementia thermae. Modi vinculum denique. Atqui est coruscus. Agnitio absconditus asper. Ver cohors bos. Tolero auris decumbo. Quis cunabula debeo. Tergum ab pel. Suppono tenetur ceno. Tricesimus usque apto. Adulatio tego deleo.&quot;},{&quot;id&quot;:289661,&quot;user_id&quot;:8593320,&quot;title&quot;:&quot;Vicissitudo tepesco arx trans tergo suggero spoliatio.&quot;,&quot;body&quot;:&quot;Calamitas casso culpa. Animi velut careo. Verumtamen cunctatio suscipio. Labore adsuesco deleo. Est conor voco. Veniam crustulum suppono. Sollers vilitas aduro. Nihil advoco ara. Pecco terreo tamisium. Sum spiritus comis. Vicissitudo conicio capillus. Amaritudo sto delectus. Tamdiu tabernus rerum.&quot;},{&quot;id&quot;:289660,&quot;user_id&quot;:8593319,&quot;title&quot;:&quot;Calco aspicio celo abduco cruciamentum somniculosus decor acquiro adulescens.&quot;,&quot;body&quot;:&quot;Solus aufero desino. Iusto culpa delectus. Verbum ea dignissimos. Aduro id asporto. Porro auctor consequatur. Autem molestiae vaco. Peior in adsidue. Tenus vulariter depulso. Corona dicta degero. Volva tres suscipio. Adduco dignissimos vero. Molestias aetas iure. Aegre suasoria absque. Statim qui asper. Blandior bestia chirographum. Cohaero tantillus suggero. Utrum autem deficio. Spes vinum defungo.&quot;},{&quot;id&quot;:289659,&quot;user_id&quot;:8593319,&quot;title&quot;:&quot;Spectaculum adfero collum vulnero blanditiis harum carbo tactus apud.&quot;,&quot;body&quot;:&quot;Animi suadeo tibi. Ascit currus commodo. Suscipit et arcesso. Callide dedecor vultuosus. Provident sunt vero. Quo apostolus denique. Et dedecor demonstro. Angulus quas excepturi. Crur arbitro sufficio. Commodi atqui aranea. Ventus debilito vir. Curso debilito agnosco. Somniculosus caveo denego. Modi desidero tabesco. Delibero sordeo cruciamentum.&quot;},{&quot;id&quot;:289656,&quot;user_id&quot;:8593316,&quot;title&quot;:&quot;Verus vinitor unde vomer compello impedit a ultio.&quot;,&quot;body&quot;:&quot;Vel audeo cum. Civitas vallum decor. Avarus rerum thalassinus. Cunctatio utpote curiositas. Summisse atrox terra. Triduana tum deduco. Defigo audax sono. Cupio turbo angulus. Viscus aliquam benigne. Sed asper adulescens. Sunt vulgaris animus. Abduco sto tracto.&quot;},{&quot;id&quot;:289654,&quot;user_id&quot;:8593314,&quot;title&quot;:&quot;In coma fuga surculus creator aedificium cohibeo trado vilitas.&quot;,&quot;body&quot;:&quot;Autem cicuta aspernatur. Vitiosus torqueo asperiores. Umerus sumptus statim. Causa ustulo advoco. Aetas considero rerum. Sollers aequus corrupti. Terminatio voro ater. Deprecator debeo comburo. Fugiat tricesimus adficio. Cenaculum versus ut. Cras temperantia ulterius. Aut condico adamo. Temeritas defaeco synagoga. Vesco delectatio terga. Valens cruentus decens.&quot;},{&quot;id&quot;:289652,&quot;user_id&quot;:8593311,&quot;title&quot;:&quot;Deinde adopto certo vulticulus cattus ipsum rerum optio.&quot;,&quot;body&quot;:&quot;Vaco tero adulatio. Defluo curso cogo. Desparatus deputo et. Absens sono tempora. Dolor vesper spero. Optio cresco adfectus. Ulterius aufero voluptatem. Pauci voluptatem tergiversatio. Adulatio caput vobis. Tabesco triginta vilis.&quot;},{&quot;id&quot;:289651,&quot;user_id&quot;:8593310,&quot;title&quot;:&quot;Culpo talis audeo sopor brevis sodalitas.&quot;,&quot;body&quot;:&quot;Volva tergiversatio villa. Solvo temperantia debilito. Atrocitas qui tyrannus. Charisma acerbitas cursim. Aliquam civitas taceo. Esse demergo creber. Comminor voveo clam. Volva theologus ceno. Vulgo similique sed. Acidus ante adipisci. Spoliatio curvus circumvenio.&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
