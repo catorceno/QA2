@@ -1,5 +1,5 @@
 export default class Page {
-    async open(path) {
-        await browser.url(`https://the-internet.herokuapp.com/${path}`)
-    }
+    async open(path = '') {
+        await browser.url(`https://www.saucedemo.com/${path}`)
+    } 
 }

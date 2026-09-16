@@ -64,7 +64,7 @@ exports.config = {
         },
         // Configuración de la ruta fija del ejecutable del driver
         'wdio:chromedriverOptions': {
-            binary: 'C:/Users/camila/Downloads/GITHUB.005/QA2/webdriverio-cucumber/drivers/chromedriver-win64/chromedriver.exe'
+            binary: 'C:/Users/camila/Downloads/GITHUB.005/QA2/webdriverio-allure/drivers/chromedriver-win64/chromedriver.exe'
         }
     },
     { browserName: 'edge' }
