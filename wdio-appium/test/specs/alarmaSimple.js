@@ -1,36 +1,26 @@
+import { expect } from '@wdio/globals'
+import AlarmPage from '../pageObjects/alarmaPage.js'
+
 describe('App de Alarma en Android', () => {
-  
-  it('Validar que se abra la app de Reloj', async () => {
-    // Título de la barra superior (Alarm, Clock, etc.)
-    const alarmTab = await $('id=com.google.android.deskclock:id/navigation_bar_item_icon_container'); 
-    await expect(alarmTab).toBeDisplayed();
-  });
 
-  it('Crear una nueva alarma', async () => {
-    // Ir a la pestaña de Alarmas
-    const alarmTab = await $('id=com.google.android.deskclock:id/navigation_bar_item_icon_container');
-    await alarmTab.click();
+    it('Validar que se abra la app de Reloj', async () => {
+        await expect(AlarmPage.alarmTab).toBeDisplayed();
+    });
 
+    it('Crear una nueva alarma', async () => {
+        await AlarmPage.openAlarmTab();
+        await AlarmPage.createAlarm("11", "30");
 
-    const addButton = await $('~Add alarm');
-    await addButton.click();
+        const newAlarm = await AlarmPage.alarmWithTime("11:30");
+        await expect(newAlarm).toBeDisplayed();
+    });
 
- 
-    const hour = await $('android=new UiSelector().text("11")');
-    await hour.click();
-    
-    const minuteBtn = await $('id=com.google.android.deskclock:id/material_minute_tv');
-    await minuteBtn.click();
-    const minute = await $('android=new UiSelector().text("30")');
-    await minute.click();
+    it('Crear una nueva alarma Cancelando', async () => {
+        await AlarmPage.openAlarmTab();
+        await AlarmPage.cancelAlarm("10", "30");
 
-    // Confirmar
-    const okBtn = await $('id=com.google.android.deskclock:id/material_timepicker_ok_button');
-    await okBtn.click();
-
-    // Validar que la nueva alarma aparece en la lista
-    const newAlarm = await $('android=new UiSelector().textContains("11:30")');
-    await expect(newAlarm).toBeDisplayed();
-  });
+        const cancelledAlarm = await AlarmPage.alarmWithTime("10:30");
+        await expect(cancelledAlarm).not.toExist();
+    });
 
 });
