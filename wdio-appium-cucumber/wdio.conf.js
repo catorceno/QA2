@@ -61,7 +61,27 @@ exports.config = {
         "appium:appActivity": "com.android.deskclock.DeskClock", // actividad principal
         "appium:newCommandTimeout": 300,
         "appium:autoGrantPermissions": true
-    }],
+    },
+    {
+        platformName: 'android',
+        'appium:automationName': 'UiAutomator2',
+
+        // 🔹 APK subida a BrowserStack
+        'appium:app': 'bs://578f9832d4644271a3aa3e00dc27f7c5690898bf',
+        //'appium:appPackage': 'com.google.android.deskclock',
+        //'appium:appActivity': 'com.android.deskclock.DeskClock',
+
+        // 🔹 Opciones de BrowserStack
+        'bstack:options': {
+            deviceName: 'Google Pixel 10',  // dispositivo real en la nube
+            osVersion: '16.0',
+            projectName: 'Proyecto QA',
+            buildName: 'Build Alarmas',
+            sessionName: 'Prueba APK Alarmas',
+            local: false  // si no necesitas BrowserStack Local
+        }
+    }
+    ],
 
     //
     // ===================
@@ -110,7 +130,14 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['appium'],
+    services: ['appium',
+    [
+      'browserstack',
+      {
+        buildIdentifier: "${BUILD_NUMBER}",
+        browserstackLocal: true
+      },
+    ]],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
