@@ -29,4 +29,5 @@ When('Desactivo la alarma con descripción {string}', async (description) => {
 Then('El texto {string} debería estar visible en la pantalla', async (text) => {
     const visible = await AlarmPage.isTextDisplayed(text);
     assert.strictEqual(visible, true, `El texto "${text}" no está visible en la pantalla`);
+    await browser.takeScreenshot();
 });

@@ -42,6 +42,7 @@ class AlarmPage {
 
     await this.hourElement(hour).click();
     await this.minuteElement(minute).click();
+    await browser.takeScreenshot();
 
     await this.okBtn.click();
   }
@@ -104,6 +105,7 @@ class AlarmPage {
   async setRepeatDay(dayNumber, instance = 2) {
     await this.openAlarmCard(instance);
     await this.dayButton(dayNumber).click();
+    await browser.takeScreenshot();
     await this.saveButton().click();
   }
 
