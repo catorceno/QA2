@@ -24,8 +24,11 @@ class CatalogoPage extends Page {
 
     get linkMisPrestamos() { return $('=Mis préstamos') }
 
-    diaCalendario(dia) {
-        return $(`//div[@id="loan-calendar"]//button[normalize-space()="${dia}"]`)
+    diaCalendario(fecha) {
+        const yyyy = fecha.getFullYear()
+        const mm = String(fecha.getMonth() + 1).padStart(2, '0')
+        const dd = String(fecha.getDate()).padStart(2, '0')
+        return $(`#loan-calendar button[data-date="${yyyy}-${mm}-${dd}"]`)
     }
 
     async open() {
@@ -101,7 +104,7 @@ class CatalogoPage extends Page {
             await btn.click()
         }
 
-        const dia = this.diaCalendario(destino.getDate())
+        const dia = this.diaCalendario(destino)
         await dia.waitForClickable({ timeout: 5000 })
         await dia.click()
     }
