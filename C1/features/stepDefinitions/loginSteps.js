@@ -1,34 +1,30 @@
 import { Given, Then, When } from "@wdio/cucumber-framework";
 import { expect } from '@wdio/globals'
 import LoginPage from "../../pageObjects/loginPage";
+import CatalogoPage from "../../pageObjects/catalogoPage"
 
-
-Given('I\'m at SauceDemo\'s login page', async () => {
+Given('estoy en la página de login de Biblioteca QA', async () => {
     await LoginPage.open()
     await browser.takeScreenshot()
 })
 
-Given('I\'m logged as {string} at SauceDemo', async (username) => {
+Given('estoy logeando como {string} en Biblioteca QA', async (username) => {
     await LoginPage.open()
-    await LoginPage.login(username, 'secret_sauce')
-    // await expect(await InventoryPage.isLoaded()).toBe(true)
+    await LoginPage.login(username, 'Lector123!')
+    await expect(await CatalogoPage.isLoaded()).toBe(true)
     await browser.takeScreenshot()
 })
 
-When('I enter username {string} and password {string}', async (username, password) => {
+When('ingreso el usuario {string} y la contraseña {string}', async (username, password) => {
     await LoginPage.login(username, password)
     await browser.takeScreenshot()
 })
 
-Then('it should successfully access the products page', async () => {
-    // await expect(await InventoryPage.isLoaded()).toBe(true)
+Then('debería acceder correctamente a la página de catálogo', async () => {
+    await expect(await CatalogoPage.isLoaded()).toBe(true)
     const url = await browser.getUrl()
-    await expect(url).toContain('inventory.html')
+    await expect(url).toContain('catalogo')
     await browser.takeScreenshot()
 })
 
-Then('it should display error message {string}', async (expectedMessage) => {
-    const message = await LoginPage.getErrorMessage()
-    await expect(message).toContain(expectedMessage)
-    await browser.takeScreenshot()
-})
+// verificar que el libro este registrado

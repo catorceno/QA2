@@ -1,5 +1,5 @@
 export default class Page {
     async open(path = ''){
-        await browser.url(`https://www.saucedemo.com/${path}`)
+        await browser.url(`https://biblioteca-qa.pages.dev/${path}`)
     }
 }

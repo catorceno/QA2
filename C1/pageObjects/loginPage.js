@@ -1,13 +1,12 @@
 import Page from './page.js'
 
 class LoginPage extends Page {
-    get inputUsername() { return $('#user-name') }
-    get inputPassword() { return $('#password') }
-    get btnLogin() { return $('#login-button') }
-    get errorMessage() { return $('[data-test="error"]') }
+    get inputUsername() { return $('#login-username') }
+    get inputPassword() { return $('#login-password') }
+    get btnLogin() { return $('#btn-login') }
 
     async open(){
-        await super.open('/')
+        await super.open('login')
     }
 
     async login(username, password){
@@ -15,11 +14,6 @@ class LoginPage extends Page {
         await this.inputPassword.setValue(password)
         await browser.takeScreenshot()
         await this.btnLogin.click()
-    }
-
-    async getErrorMessage(){
-        await this.errorMessage.waitForDisplayed()
-        return this.errorMessage.getText()
     }
 }
 
