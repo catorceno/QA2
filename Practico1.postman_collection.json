@@ -16,14 +16,10 @@
             {
               "listen": "test",
               "script": {
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
-                  "});"
-                ],
                 "type": "text/javascript",
-                "packages": {},
-                "requests": {}
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\n\r\npm.test(\"Returns at least one user\", function () {\r\n    const users = pm.response.json();\r\n    pm.expect(users).to.be.an(\"array\").that.is.not.empty;\r\n    pm.environment.set(\"existingUserId\", users[0].id);\r\n});"
+                ]
               }
             }
           ],
@@ -346,19 +342,10 @@
             {
               "listen": "test",
               "script": {
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {\r",
-                  "    pm.response.to.have.status(200);\r",
-                  "});\r",
-                  "\r",
-                  "// pm.test(\"Email is correct\", function(){\r",
-                  "//     var jsonData = pm.response.json();\r",
-                  "//     pm.expect(jsonData.email).to.eql(pm.environment.get(\"email\"));\r",
-                  "// });"
-                ],
                 "type": "text/javascript",
-                "packages": {},
-                "requests": {}
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r\n    pm.response.to.have.status(200);\r\n});\r\n\r\npm.test(\"Id matches\", function () {\r\n    const jsonData = pm.response.json();\r\n    pm.expect(jsonData.id).to.eql(Number(pm.environment.get(\"existingUserId\")));\r\n});"
+                ]
               }
             }
           ],
@@ -371,13 +358,13 @@
               }
             ],
             "url": {
-              "raw": "{{baseURL}}/users/{{userId}}",
+              "raw": "{{baseURL}}/users/{{existingUserId}}",
               "host": [
                 "{{baseURL}}"
               ],
               "path": [
                 "users",
-                "{{userId}}"
+                "{{existingUserId}}"
               ]
             },
             "description": "Generated from cURL: curl -X GET 'https://gorest.co.in/public/v2/users/1' \\\r\n  -H 'Accept: application/json'"
