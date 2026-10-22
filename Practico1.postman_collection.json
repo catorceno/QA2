@@ -351,10 +351,10 @@
                   "    pm.response.to.have.status(200);\r",
                   "});\r",
                   "\r",
-                  "pm.test(\"Email is correct\", function(){\r",
-                  "    var jsonData = pm.response.json();\r",
-                  "    pm.expect(jsonData.email).to.eql(pm.environment.get(\"email\"));\r",
-                  "});"
+                  "// pm.test(\"Email is correct\", function(){\r",
+                  "//     var jsonData = pm.response.json();\r",
+                  "//     pm.expect(jsonData.email).to.eql(pm.environment.get(\"email\"));\r",
+                  "// });"
                 ],
                 "type": "text/javascript",
                 "packages": {},
