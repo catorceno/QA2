@@ -11,7 +11,7 @@ pipeline {
     stage('Checkout'){
       steps {
         echo 'Clonando el repositorio...'
-        git branch: 'practico-2-karate', url: 'https://github.com/catorceno/QA2.git'
+        git branch: 'C2-practico-4-karate-jenkinsfile', url: 'https://github.com/catorceno/QA2.git'
       }
     }
 
