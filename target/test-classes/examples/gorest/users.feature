@@ -1,3 +1,4 @@
+@Users
 Feature: CRUD para users
 
   Background:
