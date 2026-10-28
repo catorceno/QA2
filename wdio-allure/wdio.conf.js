@@ -1,3 +1,5 @@
+const isCI = !!process.env.JENKINS_URL
+
 exports.config = {
     //
     // ====================
@@ -57,17 +59,19 @@ exports.config = {
             args: [
                 '--disable-infobars',   // Quitar "Chrome está siendo controlado..."
                 '--disable-extensions', // Deshabilitar extensiones
-                '--start-maximized' ,    // Maximizar ventana
-                'enable-automation',
-                '--disable-blink-features=AutomationControlled'
+                '--disable-blink-features=AutomationControlled',
+                ...(isCI
+                    ? ['--headless=new', '--window-size=1920,1080']
+                    : ['--start-maximized'])
             ]
-        },
-        // Configuración de la ruta fija del ejecutable del driver
-        'wdio:chromedriverOptions': {
-            binary: 'C:/Users/camila/Downloads/GITHUB.005/QA2/webdriverio-allure/drivers/chromedriver-win64/chromedriver.exe'
         }
     },
-    { browserName: 'edge' }
+    {
+        browserName: 'edge',
+        ...(isCI
+            ? { 'ms:edgeOptions': { args: ['--headless=new', '--window-size=1920,1080'] } }
+            : {})
+    }
 ],
 
     //

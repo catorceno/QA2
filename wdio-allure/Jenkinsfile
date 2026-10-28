@@ -17,7 +17,8 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'practico-5-jenkinsfile-wdio', url: 'https://github.com/catorceno/QA2.git'
+                echo 'Clonando el repositorio...'
+                checkout scm
             }
         }
 
@@ -61,7 +62,4 @@ pipeline {
             echo 'Pipeline finalizada'
         }
     }
-}
-
-
 }
