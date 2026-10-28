@@ -11,7 +11,7 @@ pipeline {
     stage('Checkout'){
       steps {
         echo 'Clonando el repositorio...'
-        git branch: 'C2-practico-4-karate-jenkinsfile', url: 'https://github.com/catorceno/QA2.git'
+        checkout scm
       }
     }
 
@@ -19,7 +19,9 @@ pipeline {
     stage('Build & Tests'){
       steps {
         echo 'Ejecutando pruebas Karate'
-        bat 'mv test -Dkarate.options="--tags @Users"'
+        dir('karate') {
+          bat 'mvn test -Dkarate.options="--tags @Users"'
+        }
       }
     }
 
@@ -31,7 +33,7 @@ pipeline {
           allowMissing: false,
           alwaysLinkToLastBuild: true,
           keepAll: true,
-          reportDir: 'target/karate-reports',
+          reportDir: 'karate/target/karate-reports',
           reportFiles: 'karate-summary.html',
           reportName: 'Reporte de Pruebas Karate'
         ])
