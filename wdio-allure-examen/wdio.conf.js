@@ -1,3 +1,5 @@
+const isCI = !!process.env.JENKINS_URL
+
 exports.config = {
     //
     // ====================
@@ -51,21 +53,18 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-		browserName: 'chrome',
+        browserName: 'chrome',
         'goog:chromeOptions': {
             args: [
-                '--disable-infobars',   // Quitar "Chrome está siendo controlado..."
-                '--disable-extensions', // Deshabilitar extensiones
-                '--start-maximized' ,    // Maximizar ventana
-                'enable-automation',
-                '--disable-blink-features=AutomationControlled'
+                '--disable-infobars',
+                '--disable-extensions',
+                '--disable-blink-features=AutomationControlled',
+                ...(isCI
+                    ? ['--headless=new', '--window-size=1920,1080']
+                    : ['--start-maximized'])
             ]
-        },
-        // Configuración de la ruta fija del ejecutable del driver
-        'wdio:chromedriverOptions': {
-            binary: 'C:/Users/camila/Downloads/GITHUB.005/QA2/C1/drivers/chromedriver-win64-version-153/chromedriver.exe'
         }
-}],
+    }],
 
     //
     // ===================

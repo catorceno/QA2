@@ -1,0 +1,96 @@
+pipeline {
+    agent any
+
+    // Java: lo necesita allure-commandline (npx allure generate).
+    // El nombre debe coincidir con Manage Jenkins > Tools > JDK installations.
+    tools {
+        jdk 'Java21'
+    }
+
+    options {
+        // El checkout lo hace la etapa "Checkout"; el automatico clonaria el repo dos veces.
+        skipDefaultCheckout(true)
+        timeout(time: 30, unit: 'MINUTES')
+    }
+
+    environment {
+        // Carpeta absoluta para resultados y reportes (el proyecto esta en una subcarpeta)
+        ALLURE_RESULTS = "${env.WORKSPACE}/wdio-allure-examen/allure-results"
+        ALLURE_REPORT  = "${env.WORKSPACE}/wdio-allure-examen/allure-report"
+    }
+
+    stages {
+        stage('Preparar Workspace') {
+            steps {
+                echo "Limpiando workspace..."
+                deleteDir()
+            }
+        }
+
+        stage('Checkout') {
+            steps {
+                echo 'Clonando el repositorio...'
+                // Usa la URL, la rama, el refspec y el shallow clone configurados en el job
+                checkout scm
+            }
+        }
+
+        stage('Instalar dependencias') {
+            steps {
+                dir('wdio-allure-examen') {
+                    bat 'npm install'
+                }
+            }
+        }
+
+        stage('Ejecutar WDIO') {
+            steps {
+                echo "Ejecutando pruebas WDIO..."
+                dir('wdio-allure-examen') {
+                    // Si fallan pruebas, el build queda UNSTABLE y se sigue generando el reporte
+                    catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                        bat 'npx wdio run wdio.conf.js'
+                        // Para correr solo un tag:
+                        // bat 'npx wdio run wdio.conf.js --cucumberOpts.tagExpression="@loginExitoso"'
+                    }
+                }
+            }
+        }
+
+        stage('Generar reporte Allure') {
+            steps {
+                echo "Generando reporte Allure..."
+                dir('wdio-allure-examen') {
+                    bat """
+                    npx allure generate %ALLURE_RESULTS% --clean -o %ALLURE_REPORT%
+                    """
+                }
+            }
+        }
+
+        stage('Publicar reporte Allure en Jenkins') {
+            steps {
+                echo "Publicando reporte Allure usando el plugin..."
+                allure([
+                    includeProperties: false,
+                    jdk: '',
+                    commandline: 'allure', // nombre de Tools > Allure installations
+                    results: [[path: 'wdio-allure-examen/allure-results']],
+                    reportBuildPolicy: 'ALWAYS'
+                ])
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline finalizada'
+        }
+        success {
+            echo 'Pruebas WDIO ejecutadas con exito.'
+        }
+        failure {
+            echo 'Fallo alguna etapa del pipeline.'
+        }
+    }
+}
