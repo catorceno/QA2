@@ -1,3 +1,4 @@
+@Comments
 Feature: CRUD para comments
 
   Background:

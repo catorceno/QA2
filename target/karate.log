@@ -2907,3 +2907,2203 @@ classpath:examples/gorest/users.feature:63
 {"id":8593507,"name":"Charlena Frami","email":"raymon3@test.com","gender":"male","status":"active"}
 
 11:15:15.254 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/gorest/users.feature
+08:29:02.940 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @Users
+08:29:04.652 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:29:04.662 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1794486544656
+08:29:04.676 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+08:29:07.547 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+08:29:07.547 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+08:29:07.547 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+08:29:07.547 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+08:29:07.547 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+08:29:07.799 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/gorest/users.feature:10
+* def dataGenerator = Java.type('Utils.DataGenerator')
+js failed:
+>>>>
+01: Java.type('Utils.DataGenerator')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class Utils.DataGenerator is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:examples/gorest/users.feature:10
+08:29:07.799 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/gorest/users.feature:10
+* def dataGenerator = Java.type('Utils.DataGenerator')
+js failed:
+>>>>
+01: Java.type('Utils.DataGenerator')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class Utils.DataGenerator is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:examples/gorest/users.feature:10
+08:29:07.799 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/gorest/users.feature:10
+* def dataGenerator = Java.type('Utils.DataGenerator')
+js failed:
+>>>>
+01: Java.type('Utils.DataGenerator')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class Utils.DataGenerator is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:examples/gorest/users.feature:10
+08:29:07.799 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/gorest/users.feature:10
+* def dataGenerator = Java.type('Utils.DataGenerator')
+js failed:
+>>>>
+01: Java.type('Utils.DataGenerator')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class Utils.DataGenerator is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:examples/gorest/users.feature:10
+08:29:07.799 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/gorest/users.feature:10
+* def dataGenerator = Java.type('Utils.DataGenerator')
+js failed:
+>>>>
+01: Java.type('Utils.DataGenerator')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class Utils.DataGenerator is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:examples/gorest/users.feature:10
+08:29:09.796 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:examples/gorest/users.feature
+08:32:13.421 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --tags @Users
+08:32:14.933 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+08:32:14.945 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1794486734937
+08:32:14.957 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+08:32:17.313 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+08:32:17.313 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+08:32:17.313 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+08:32:17.313 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+08:32:17.313 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+08:32:18.364 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 81
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Vito Adams","email":"burl59@test.com"}
+
+08:32:18.364 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 85
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Delena Lemke","email":"brandee6@test.com"}
+
+08:32:18.364 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 89
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Lila Mitchell","email":"adalberto25@test.com"}
+
+08:32:18.364 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 85
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Jame Bartoletti","email":"seth1@test.com"}
+
+08:32:18.364 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+08:32:21.687 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3314
+1 < 201
+1 < Date: Thu, 12 Nov 2026 12:32:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 94
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-4da6X4L8XGW/VCI5f1iIKQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"30868edd26e81a787e6e1f5450826a0c"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709324
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=S7Uo1%2FvtLB9RSsOMdnNMTxqD3gNVIhm7IOFF%2BtqEeNpYR2IBWfWHtai1O9rWuU28E6nHkkBmWdVpk63nuUO%2BlbhmlHB8FQnShXg9dywwu%2F1oruU4r7OpL8RkKehtFBU%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5958f039cedf25a-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709324,"name":"Vito Adams","email":"burl59@test.com","gender":"male","status":"active"}
+
+08:32:21.687 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 3314
+1 < 201
+1 < Date: Thu, 12 Nov 2026 12:32:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 98
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-XInOl4Xd+CeapCKATnxewA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"d05faa97968b5218e305ed28d9e432da"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709326
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 296
+1 < x-ratelimit-reset: 1
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3aMRyu%2FgOQJRvrGIluhRTTHp8KGjjBtsiLDf15B9DZuHEiu%2BlZh1R8HotC6HjU%2BHQXvOXYYR%2FpKGJgDUboDpFJDxn0WDpDfsXNKSITO9gPnU8etAuBScWzpEWqK9%2F1A%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5958f038d8417ce-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"}
+
+08:32:21.687 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 3317
+1 < 200
+1 < Date: Thu, 12 Nov 2026 12:32:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-QpBnp0eKZIWJfU7vjRp8Hw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"4a750b71d41fd52ef63605aaf798cd1d"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2976
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=fgf2c%2By12hJbv%2Bx3bwbc4KgUfRWgC5ulrlJeX93qB2ijXw5yR8eITpf3uXlusMAw9J2LNTPb7IRPGSsxrQvApfsX2P4m%2BeO0VyVewfKIM7PsQj%2B9CyJJaOvVTzf4ofg%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5958f0389bc1ce7-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"},{"id":8708446,"name":"Arjun Joshi","email":"arjun_joshi_80334@patel.example","gender":"male","status":"active"},{"id":8708445,"name":"Vivaan Gupta","email":"vivaan_gupta_1895@nair.example","gender":"male","status":"inactive"},{"id":8708444,"name":"Meera Kumar","email":"meera_kumar_45775@menon.example","gender":"female","status":"inactive"}]
+
+08:32:21.687 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3314
+1 < 201
+1 < Date: Thu, 12 Nov 2026 12:32:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 98
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Ypd7fdeIhtJrr7AETvFF2g=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"3fb7f89de085903c842ef07d3de2f244"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709327
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 295
+1 < x-ratelimit-reset: 1
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=yxp%2FYQTveNkcKF1VIizz23ztZ5OmMkK7%2BlFNInzj%2BELxhNHadWG2bTbMX5QkpsgASILuCkL0gODnj7CrY%2FHjsg40suBo0IxbSp1%2B4NK1eB2VQZLBkOphz0qmy2GUMOQ%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5958f038de00cec-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"}
+
+08:32:21.687 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 3314
+1 < 201
+1 < Date: Thu, 12 Nov 2026 12:32:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-6shiTexDPpzCSS5iRv9PXQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"ff88a7764df3a1df1aa20e37182d22d1"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709325
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 297
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=jBeIP%2Fp7ctiLjfcEZcdybAxydPE%2B3nA8mrs4E4846VMX76T6CD80vlqtsvAW%2BjDmBxJCfXe3XTtvLh%2F1OCaY9oFllH2x3FOCwzeRFuN%2F%2B8DPJIjp9sNsjvbYMLn7Y2c%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5958f03882a00e6-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"}
+
+08:32:21.728 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+2 > GET https://gorest.co.in/public/v2/users/8709327
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+08:32:21.728 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > PUT https://gorest.co.in/public/v2/users/8709325
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+08:32:21.728 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709324
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+08:32:22.713 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 984
+2 < 200
+2 < Date: Thu, 12 Nov 2026 12:32:20 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Lha6UwDzpkyYjeEBP/1aow=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < etag: W/"ff88a7764df3a1df1aa20e37182d22d1"
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 298
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < cf-cache-status: DYNAMIC
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=6qbFNygabWYMNUTTUiL34p4aD6iLetZolDTmM2qzEVgUvOfiCO3x9EZPHLSpTwfQAtOqxhlzRYwl1Fx%2BWjcuJ174kYUa7RybgO7dGXuC91W%2F0Qy%2B1NzhMfmmJ4bAH9o%3D"}]}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=19,cfOrigin;dur=413
+2 < Server: cloudflare
+2 < CF-RAY: a5958f0fbfbb9391-GRU
+2 < alt-svc: h3=":443"; ma=86400
+{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"}
+
+08:32:22.713 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 984
+2 < 200
+2 < Date: Thu, 12 Nov 2026 12:32:20 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Cache-Control: max-age=0, private, must-revalidate
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-YUYDQ0qo3S0dCUXjc9shpw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < etag: W/"3fb7f89de085903c842ef07d3de2f244"
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < cf-cache-status: DYNAMIC
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=eX9TmKQuQJBUAblfo9ZSpGDcqcsKZ2gvI0povw%2Fo0MrAyuFnoOvQF%2BQsCyJJV%2FB2ChXCID%2BuD8VdVsDZesL6GVVv6Y5oaiCuBAQkGNSCN4vcYszKWPREok45AE6qdIg%3D"}]}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=16,cfOrigin;dur=403
+2 < Server: cloudflare
+2 < CF-RAY: a5958f0fbaf5190e-GRU
+2 < alt-svc: h3=":443"; ma=86400
+{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"}
+
+08:32:23.325 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 1596
+2 < 204
+2 < Date: Thu, 12 Nov 2026 12:32:21 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-LfJYJsPisvSmL7i0BimTvw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=14,cfOrigin;dur=1194
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=LIG5lETzLZtxNDbxG%2BOZ4vjor38KNu%2BUCKZ88g%2BKxYro4XnyEqg6Ab2FXSQPgUSyQVrogLXQw87fHlyHaAllXpdF%2BR9Osc90ZrYUCtwohvnCGNMzKzHo8NRmaVPGqTc%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a5958f0fbce08c8e-GRU
+2 < alt-svc: h3=":443"; ma=86400
+
+
+08:32:25.047 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/gorest/users.feature
+09:07:06.329 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+09:07:07.362 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+09:07:11.069 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+09:07:11.069 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+09:07:11.092 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+09:07:11.099 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+09:07:11.147 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@4b9f2333 has finished injecting
+09:07:11.150 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+09:07:12.227 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:07:12.234 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:07:12.246 [gatling-1-1] ERROR c.i.k.gatling.KarateFeatureAction - 'classpath:examples/gorest/user.feature@GetUser' crashed on session Session(Prueba de carga con Karate GET,1,Map(),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda/0x00000199013fe368@22dfbda6,io.netty.channel.nio.NioEventLoop@3122b117), forwarding to the next one
+java.lang.RuntimeException: not found: examples/gorest/user.feature
+	at com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+	at com.intuit.karate.core.Feature.read(Feature.java:54)
+	at com.intuit.karate.FileUtils.parseFeatureAndCallTag(FileUtils.java:108)
+	at com.intuit.karate.Runner.callAsync(Runner.java:82)
+	at com.intuit.karate.gatling.KarateFeatureAction.execute(KarateActions.scala:123)
+	at io.gatling.core.action.Action.$bang(Action.scala:42)
+	at io.gatling.core.action.Action.$bang$(Action.scala:39)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ChainableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ChainableAction.$bang(Action.scala:73)
+	at io.gatling.core.action.ChainableAction.$bang$(Action.scala:71)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ExitableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ExitableAction.$bang(Action.scala:110)
+	at io.gatling.core.action.ExitableAction.$bang$(Action.scala:107)
+	at com.intuit.karate.gatling.KarateFeatureAction.$bang(KarateActions.scala:45)
+	at io.gatling.core.controller.inject.Workload.startUser(Workload.scala:53)
+	at io.gatling.core.controller.inject.Workload.$anonfun$injectUser$1(Workload.scala:64)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+09:07:12.311 [gatling-1-2] ERROR c.i.k.gatling.KarateFeatureAction - 'classpath:examples/gorest/user.feature@GetUser' crashed on session Session(Prueba de carga con Karate GET,2,Map(),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda/0x00000199013fe368@22dfbda6,io.netty.channel.nio.NioEventLoop@534ca02b), forwarding to the next one
+java.lang.RuntimeException: not found: examples/gorest/user.feature
+	at com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+	at com.intuit.karate.core.Feature.read(Feature.java:54)
+	at com.intuit.karate.FileUtils.parseFeatureAndCallTag(FileUtils.java:108)
+	at com.intuit.karate.Runner.callAsync(Runner.java:82)
+	at com.intuit.karate.gatling.KarateFeatureAction.execute(KarateActions.scala:123)
+	at io.gatling.core.action.Action.$bang(Action.scala:42)
+	at io.gatling.core.action.Action.$bang$(Action.scala:39)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ChainableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ChainableAction.$bang(Action.scala:73)
+	at io.gatling.core.action.ChainableAction.$bang$(Action.scala:71)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ExitableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ExitableAction.$bang(Action.scala:110)
+	at io.gatling.core.action.ExitableAction.$bang$(Action.scala:107)
+	at com.intuit.karate.gatling.KarateFeatureAction.$bang(KarateActions.scala:45)
+	at io.gatling.core.controller.inject.Workload.startUser(Workload.scala:53)
+	at io.gatling.core.controller.inject.Workload.$anonfun$injectUser$2(Workload.scala:66)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+09:07:13.134 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:07:13.136 [gatling-1-3] ERROR c.i.k.gatling.KarateFeatureAction - 'classpath:examples/gorest/user.feature@GetUser' crashed on session Session(Prueba de carga con Karate GET,3,Map(),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda/0x00000199013fe368@22dfbda6,io.netty.channel.nio.NioEventLoop@29a23c3d), forwarding to the next one
+java.lang.RuntimeException: not found: examples/gorest/user.feature
+	at com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+	at com.intuit.karate.core.Feature.read(Feature.java:54)
+	at com.intuit.karate.FileUtils.parseFeatureAndCallTag(FileUtils.java:108)
+	at com.intuit.karate.Runner.callAsync(Runner.java:82)
+	at com.intuit.karate.gatling.KarateFeatureAction.execute(KarateActions.scala:123)
+	at io.gatling.core.action.Action.$bang(Action.scala:42)
+	at io.gatling.core.action.Action.$bang$(Action.scala:39)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ChainableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ChainableAction.$bang(Action.scala:73)
+	at io.gatling.core.action.ChainableAction.$bang$(Action.scala:71)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ExitableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ExitableAction.$bang(Action.scala:110)
+	at io.gatling.core.action.ExitableAction.$bang$(Action.scala:107)
+	at com.intuit.karate.gatling.KarateFeatureAction.$bang(KarateActions.scala:45)
+	at io.gatling.core.controller.inject.Workload.startUser(Workload.scala:53)
+	at io.gatling.core.controller.inject.Workload.$anonfun$injectUser$2(Workload.scala:66)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+09:07:13.138 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate GET are stopped
+09:07:13.139 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.core.controller.inject.Injector - Stopping
+09:07:13.142 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+09:07:13.203 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+09:07:13.252 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulation-20261112130710980\simulation.log) from gatlingsimulation-20261112130710980
+09:07:13.280 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+09:07:13.292 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 7 lines
+09:07:13.316 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+09:07:13.341 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 7 lines
+09:09:22.327 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+09:09:23.242 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+09:09:28.594 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+09:09:28.594 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+09:09:28.624 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+09:09:28.630 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+09:09:28.677 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@54299df8 has finished injecting
+09:09:28.679 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+09:09:30.171 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:09:30.186 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:09:30.458 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+09:09:30.458 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+09:09:30.673 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:09:30.682 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+09:09:33.190 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
+09:09:33.190 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - karate.env system property was: null 
+09:09:33.190 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was: null 
+09:09:34.135 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:09:34.135 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:09:34.135 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:09:35.466 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 1326
+1 < 200
+1 < Date: Thu, 12 Nov 2026 13:09:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-ei+O/aStlzKv0YhXevhHxw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=8wWwYA2SHXS0aUbxArFRvjhtiq98fumT3iOEc0l7CvRGTxRZtrCQcKtB7Z59szD3LR%2FTdSu1MpoGirnYHV7XIjvmffAIBFjWQ%2BQPFrALkWW%2BBca8CVWWaHujSvtITRE%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595c58faf24d8ee-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+09:09:35.466 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 1326
+1 < 200
+1 < Date: Thu, 12 Nov 2026 13:09:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-BMVvDORGakTsPjbURFmj6A=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VUrJ255BwsaS%2FBMycuA8v3NC1XMNX0y9zxReS5aOJ2utKftneIMIWH8rlPUOSrUpVCqAeloNOhiE432x6GgSno9snJl%2BkuLveSS5cCGusMK%2FiUhoP8ZP2Apkpc3wJ%2Fc%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595c58f9bdbfe2f-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+09:09:37.269 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 3133
+1 < 200
+1 < Date: Thu, 12 Nov 2026 13:09:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-F73X/RVxuz5rJ+UAntkAww=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JgbDG99Vqe%2FyKShS4Q%2BkayUbCyvzxba9xTNUb1uTiFasxW1RmLFKcUhBeLZiEHS7dvn5lkmgIvR3YnsW0RDUPQGvVtb3zWDqgJmeUtVUO%2BM97QkHYuUDzF1vpfd1rE4%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595c58f9970f195-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+09:09:37.272 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate GET are stopped
+09:09:37.273 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+09:09:37.274 [GatlingSystem-akka.actor.default-dispatcher-9] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+09:09:37.334 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+09:09:37.392 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulation-20261112130928419\simulation.log) from gatlingsimulation-20261112130928419
+09:09:37.421 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+09:09:37.434 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 10 lines
+09:09:37.458 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+09:09:37.492 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 10 lines
+09:17:43.039 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+09:17:43.897 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+09:17:48.354 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+09:17:48.354 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+09:17:48.371 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+09:17:48.462 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+09:17:48.515 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@717e0647 has finished injecting
+09:17:48.517 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+09:17:49.737 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:17:49.744 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:17:49.756 [gatling-1-1] ERROR c.i.k.gatling.KarateFeatureAction - 'classpath:examples/Usuario/User.feature@DeleteUser' crashed on session Session(Prueba de carga con Karate Delete,1,Map(),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda/0x00000192b24059b8@4a2aee65,io.netty.channel.nio.NioEventLoop@3122b117), forwarding to the next one
+java.lang.RuntimeException: not found: examples/Usuario/User.feature
+	at com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+	at com.intuit.karate.core.Feature.read(Feature.java:54)
+	at com.intuit.karate.FileUtils.parseFeatureAndCallTag(FileUtils.java:108)
+	at com.intuit.karate.Runner.callAsync(Runner.java:82)
+	at com.intuit.karate.gatling.KarateFeatureAction.execute(KarateActions.scala:123)
+	at io.gatling.core.action.Action.$bang(Action.scala:42)
+	at io.gatling.core.action.Action.$bang$(Action.scala:39)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ChainableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ChainableAction.$bang(Action.scala:73)
+	at io.gatling.core.action.ChainableAction.$bang$(Action.scala:71)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ExitableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ExitableAction.$bang(Action.scala:110)
+	at io.gatling.core.action.ExitableAction.$bang$(Action.scala:107)
+	at com.intuit.karate.gatling.KarateFeatureAction.$bang(KarateActions.scala:45)
+	at io.gatling.core.controller.inject.Workload.startUser(Workload.scala:53)
+	at io.gatling.core.controller.inject.Workload.$anonfun$injectUser$1(Workload.scala:64)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+09:17:49.835 [gatling-1-2] ERROR c.i.k.gatling.KarateFeatureAction - 'classpath:examples/Usuario/User.feature@DeleteUser' crashed on session Session(Prueba de carga con Karate Delete,2,Map(),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda/0x00000192b24059b8@4a2aee65,io.netty.channel.nio.NioEventLoop@534ca02b), forwarding to the next one
+java.lang.RuntimeException: not found: examples/Usuario/User.feature
+	at com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+	at com.intuit.karate.core.Feature.read(Feature.java:54)
+	at com.intuit.karate.FileUtils.parseFeatureAndCallTag(FileUtils.java:108)
+	at com.intuit.karate.Runner.callAsync(Runner.java:82)
+	at com.intuit.karate.gatling.KarateFeatureAction.execute(KarateActions.scala:123)
+	at io.gatling.core.action.Action.$bang(Action.scala:42)
+	at io.gatling.core.action.Action.$bang$(Action.scala:39)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ChainableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ChainableAction.$bang(Action.scala:73)
+	at io.gatling.core.action.ChainableAction.$bang$(Action.scala:71)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ExitableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ExitableAction.$bang(Action.scala:110)
+	at io.gatling.core.action.ExitableAction.$bang$(Action.scala:107)
+	at com.intuit.karate.gatling.KarateFeatureAction.$bang(KarateActions.scala:45)
+	at io.gatling.core.controller.inject.Workload.startUser(Workload.scala:53)
+	at io.gatling.core.controller.inject.Workload.$anonfun$injectUser$2(Workload.scala:66)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+09:17:50.490 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:17:50.491 [gatling-1-3] ERROR c.i.k.gatling.KarateFeatureAction - 'classpath:examples/Usuario/User.feature@DeleteUser' crashed on session Session(Prueba de carga con Karate Delete,3,Map(),OK,List(),io.gatling.core.protocol.ProtocolComponentsRegistry$$Lambda/0x00000192b24059b8@4a2aee65,io.netty.channel.nio.NioEventLoop@29a23c3d), forwarding to the next one
+java.lang.RuntimeException: not found: examples/Usuario/User.feature
+	at com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+	at com.intuit.karate.core.Feature.read(Feature.java:54)
+	at com.intuit.karate.FileUtils.parseFeatureAndCallTag(FileUtils.java:108)
+	at com.intuit.karate.Runner.callAsync(Runner.java:82)
+	at com.intuit.karate.gatling.KarateFeatureAction.execute(KarateActions.scala:123)
+	at io.gatling.core.action.Action.$bang(Action.scala:42)
+	at io.gatling.core.action.Action.$bang$(Action.scala:39)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ChainableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ChainableAction.$bang(Action.scala:73)
+	at io.gatling.core.action.ChainableAction.$bang$(Action.scala:71)
+	at com.intuit.karate.gatling.KarateFeatureAction.io$gatling$core$action$ExitableAction$$super$$bang(KarateActions.scala:45)
+	at io.gatling.core.action.ExitableAction.$bang(Action.scala:110)
+	at io.gatling.core.action.ExitableAction.$bang$(Action.scala:107)
+	at com.intuit.karate.gatling.KarateFeatureAction.$bang(KarateActions.scala:45)
+	at io.gatling.core.controller.inject.Workload.startUser(Workload.scala:53)
+	at io.gatling.core.controller.inject.Workload.$anonfun$injectUser$2(Workload.scala:66)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+09:17:50.492 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate Delete are stopped
+09:17:50.494 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+09:17:50.496 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+09:17:50.560 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+09:17:50.614 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulationother-20261112131748254\simulation.log) from gatlingsimulationother-20261112131748254
+09:17:50.717 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+09:17:50.765 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 10 lines
+09:17:50.825 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+09:17:50.857 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 10 lines
+09:19:37.556 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+09:19:38.316 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+09:19:42.390 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+09:19:42.390 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+09:19:42.412 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+09:19:42.498 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+09:19:42.545 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@6cd8279 has finished injecting
+09:19:42.547 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+09:19:43.896 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:19:43.912 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:19:44.214 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+09:19:44.214 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+09:19:44.532 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:19:44.539 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+09:19:46.414 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was: null 
+09:19:46.414 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
+09:19:46.414 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  com.intuit.karate - karate.env system property was: null 
+09:19:47.204 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 88
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Donnette Walter","email":"darell72@test.com"}
+
+09:19:47.204 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 89
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Leopoldo Pfeffer","email":"yanira54@test.com"}
+
+09:19:47.204 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 89
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Lindsay Jacobson","email":"tonita74@test.com"}
+
+09:19:48.202 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - response time in milliseconds: 994
+1 < 201
+1 < Date: Thu, 12 Nov 2026 13:19:46 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-GQoTuaSrn1ldeWQl52WdVw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"c2843b314ab7125f4aa10f4036a11379"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709571
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3Xf1l%2BWOaf47FgIbHj9j3NQMnQXp5M%2Bbq7CKgyfkRhi9a4lxvO8SuzIoptWjgYUqPaT7zDnxl4RX05lpP4It5iUpec6sNLXtc5239N6sCPANXP710Y1%2B98goKPuniqg%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d4876d5c32c4-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709571,"name":"Leopoldo Pfeffer","email":"yanira54@test.com","gender":"male","status":"active"}
+
+09:19:48.227 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709571
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:19:48.999 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 1793
+1 < 201
+1 < Date: Thu, 12 Nov 2026 13:19:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 101
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-UaaPEWVY135zK9oDwt7EJA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"53cb685a3e4fbbdd856453100a4c5e86"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709572
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HZGsbdGnokP%2B6PsQq6SbRx82u1lOwhXA2IfGxeOyNqoxGZ%2BodH9Eza2%2FTVykIrCPoglo30OWsIIgtcX2nbGQxKjdt4NlPHS200%2FIywhuozrxCLwdASh6yj0kK4VqdY8%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d4875912f171-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709572,"name":"Donnette Walter","email":"darell72@test.com","gender":"male","status":"active"}
+
+09:19:49.005 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709572
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:19:49.190 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 1983
+1 < 201
+1 < Date: Thu, 12 Nov 2026 13:19:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-0bf2YO0EX0m7H4Dgmcxe6Q=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"fe0608b99340fa588afaa62b5d7ce7ae"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709573
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=FjhUx724i34LkpFyv2XefEuZgSJdt%2BdICW9q3DQLFbn4MR3h4eDqYcafPh7mvdvS%2B%2FPpoFlzc9WoYnJ%2F9io%2BTsKOEnCB%2BVjZoNMw1%2B8v83Gfu83nnH2Du5KtLI4I2ds%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d4876be36eaf-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709573,"name":"Lindsay Jacobson","email":"tonita74@test.com","gender":"male","status":"active"}
+
+09:19:49.197 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709573
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:19:49.879 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - response time in milliseconds: 1650
+2 < 204
+2 < Date: Thu, 12 Nov 2026 13:19:47 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-xPA4o+pcrT06M5+xSGweig=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=31,cfOrigin;dur=1194
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pSvTEoJJ9Bgn0%2FK0EZATfJMAoRBnorYLzkXc1Gx6rwwXKm840SjfxfynPqEwtZU0cN%2BsfkTPZT7Zjvrsz6NoMA888yiTi2z2ao9Drq0QXF2V9JwNhTBu%2BMjsAWlBknI%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a595d48cdd6601d3-GRU
+2 < alt-svc: h3=":443"; ma=86400
+
+
+09:19:50.095 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 897
+2 < 204
+2 < Date: Thu, 12 Nov 2026 13:19:48 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-2oQYQNoX6H+IUmKHvBOt0g=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=14,cfOrigin;dur=409
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UybNNyal%2FPXdJVS9CvRRnNy4g5jr5xuIHkfMNvixFoHISIBUSmQ2%2BI4Twd%2BuuWgR0LBiExFS2bUQKr9J%2F0N615TVAzHP7whsfNe7lgzcSYq8LXlPDy%2BWge8eEYP76x8%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a595d493bff2415a-GRU
+2 < alt-svc: h3=":443"; ma=86400
+
+
+09:19:51.036 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 2030
+2 < 204
+2 < Date: Thu, 12 Nov 2026 13:19:48 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-n1JO4XIJlhN+7OYX5rKByg=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=30,cfOrigin;dur=1217
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WUmQdAQEJqLIgeCWzy3eZGhDgsXxDDTep8%2FdPPiatIaDJzjr0HQdTBQnsP4bYqeWYuquYC2M8vmQ638hSAs6J0rB1JL7XYTofayNjyMBt4CD1%2FIKZnkbGi5R3xNCbFE%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a595d4927bd1a3fc-GRU
+2 < alt-svc: h3=":443"; ma=86400
+
+
+09:19:51.039 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate Delete are stopped
+09:19:51.040 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+09:19:51.042 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+09:19:51.096 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+09:19:51.153 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulationother-20261112131942294\simulation.log) from gatlingsimulationother-20261112131942294
+09:19:51.190 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+09:19:51.225 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 16 lines
+09:19:51.257 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+09:19:51.302 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 16 lines
+09:20:49.679 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+09:20:50.624 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+09:20:54.826 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+09:20:54.828 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+09:20:54.865 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+09:20:54.970 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+09:20:55.029 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@7f706b42 has finished injecting
+09:20:55.033 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+09:20:56.137 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:20:56.148 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:20:56.374 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+09:20:56.374 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+09:20:57.014 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:20:57.021 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+09:20:58.515 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
+09:20:58.515 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was: null 
+09:20:58.515 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was: null 
+09:20:59.287 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 87
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Jarod Bergstrom","email":"marry28@test.com"}
+
+09:20:59.287 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 80
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Janet Ebert","email":"les8@test.com"}
+
+09:20:59.287 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 85
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Johnny Cronin","email":"rivka65@test.com"}
+
+09:21:00.270 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 980
+1 < 201
+1 < Date: Thu, 12 Nov 2026 13:20:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 100
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-aaeM/jLtzxLr11k8kcoN2Q=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"18511e19592be83ad10ca6bcdbee6efa"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709593
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1o95R6Lt4tphfU%2FqvroADUnMkjCIbSPQE5qW%2BX%2FgDBtl3RhLQ1GvGGLNDaPM%2Fx4rwMG07qoCxVrk4BuOOF5ZhxYFxZuFK7ORabTWXB8xNwJXyKU%2Bs09vy6kYC9O2eMg%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d649db1fad79-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709593,"name":"Jarod Bergstrom","email":"marry28@test.com","gender":"male","status":"active"}
+
+09:21:00.270 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 979
+1 < 201
+1 < Date: Thu, 12 Nov 2026 13:20:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 93
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-yPCw9zMMa++K+WhrMrMo9Q=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"847b4c82f5ff4c30cbb380450f534d5f"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709592
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=NjFOnl5UhMFqVF3y8JdlsxrXCcohC4UMT18qj7QPoC9mSxfQURg1YjVA%2Ba9C6swzKft6TWQ6dsODFeA2ZhpgYObvsrKGBEywWjYpX8oIZ71fgl%2FdfKdtFTZOC35hB4A%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d649ddc9b840-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709592,"name":"Janet Ebert","email":"les8@test.com","gender":"male","status":"active"}
+
+09:21:00.318 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709593
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:21:00.328 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709592
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:21:01.223 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 867
+2 < 204
+2 < Date: Thu, 12 Nov 2026 13:20:59 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-1vRjeW28olzfOJbzyjIwow=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 297
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=38,cfOrigin;dur=413
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=eYJkTc7m2Nmp4LKm0ISBK2A6n2A7n%2FuMpXDqKRS%2BALn9hIyl68K14DvRMBl5KleKvysDdCWHpWtFIIsXaHFd09X4cG9q1RF5%2B0fgslFeTapI88w2PiB1cNwZwISwYL8%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a595d64f28b25b29-GRU
+2 < alt-svc: h3=":443"; ma=86400
+
+
+09:21:01.223 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 864
+2 < 204
+2 < Date: Thu, 12 Nov 2026 13:20:59 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-ruEBlkIXNu7+a6/hNYHpjg=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 298
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=19,cfOrigin;dur=406
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=OUEgOKMVvHKT7syK7KQq39NW6MEMs8sfR%2BtN%2FltWHy7U5q0eGu9I1%2FfIAFb3byDcW8ja0xZxX6h19jtkUky1Bo4qdiHfpDNvSoJXM9izTSdYvuq49KzVvlDFwiElNBk%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a595d64f2e81a808-GRU
+2 < alt-svc: h3=":443"; ma=86400
+
+
+09:21:01.223 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 1934
+1 < 201
+1 < Date: Thu, 12 Nov 2026 13:20:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 98
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-/0ry3CjnoYvsZVZUwit51A=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"0226fc26fd4197a3bedfc39afbb7c463"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709594
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bl7sRV%2F0M2cDwU8sCsNrSnujFsVdKZRipikppG3yc06bpHUm7zO7bPlvtyRKcXNLo%2F12582Xp1%2FfmbtzWNOukmyrA41R%2BRWSZefLH%2Fn5T5HlDlFjTJYm%2BigqgZuGoLg%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d649d915a513-GRU
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709594,"name":"Johnny Cronin","email":"rivka65@test.com","gender":"male","status":"active"}
+
+09:21:01.237 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709594
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:21:02.127 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 874
+2 < 204
+2 < Date: Thu, 12 Nov 2026 13:21:00 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-KsYY69K9qSuIlPgw8SnBDg=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=16,cfOrigin;dur=411
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9Ea8HBQW0h3L1cOjx%2F7iJdzEEJI%2F%2FwVhxJdWRYBeRnq2M5QSh2J1tNoX4COi9GMKmZTJE6If5wWUE4GRctvp6E4YnhzUgOeMqsymFiPw4tCxaP6wfba3nsIv%2B%2FjCLTY%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a595d654ef93d80a-GRU
+2 < alt-svc: h3=":443"; ma=86400
+
+
+09:21:02.129 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate Delete are stopped
+09:21:02.130 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - Stopping
+09:21:02.132 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+09:21:02.182 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+09:21:02.229 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulationother-20261112132054736\simulation.log) from gatlingsimulationother-20261112132054736
+09:21:02.247 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+09:21:02.266 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 16 lines
+09:21:02.299 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+09:21:02.354 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 16 lines
+09:22:19.674 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+09:22:20.377 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+09:22:24.251 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+09:22:24.254 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+09:22:24.286 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+09:22:24.291 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+09:22:24.341 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@195cc88a has finished injecting
+09:22:24.344 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+09:22:25.451 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:22:25.460 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:22:25.666 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+09:22:25.666 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+09:22:26.334 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:22:26.341 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+09:22:27.694 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
+09:22:27.694 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was: null 
+09:22:27.694 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - karate.env system property was: null 
+09:22:28.432 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:22:28.432 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:22:28.432 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:22:29.824 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 1386
+1 < 200
+1 < Date: Thu, 12 Nov 2026 13:22:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-NvLSbgvQdvbS2ygUjYQShA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=x2T2hoWQ6TvOroSmOCi2js2%2ByKu0lX394czy3TDi4VAamGOovMXZd2BPB6arhSQ%2F2pCiBkwNzsNx1FnbkZ1fczXKkey5rFSAU7hHCDpBHn0UO3owiEHfcpIuYcENL7I%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d8783e4b5625-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+09:22:29.824 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 1386
+1 < 200
+1 < Date: Thu, 12 Nov 2026 13:22:27 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-U9wdQIYej+xswShQuqS6pw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=PZkffqcyOepkjFu9isGxBm3O%2BYf%2BHwI2q%2B1cYRz3GtihqI0B%2BHod30tj%2FDwmMcImSF7qEGLlptm4xoGXqh7umtiy3G2GSvQeNNn33Aii6Fd6Addb8a4PrvsVwmgRnbU%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d8784e2c4585-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+09:22:30.422 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 1987
+1 < 200
+1 < Date: Thu, 12 Nov 2026 13:22:28 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-ZFGUIQbcVmsvBv3CLo/Hsg=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=cathBJ93Apgc7zzFMvKQ%2BojGXUSGrB0fpgl%2BjHRHicHfTsTnQW%2F8Bq0XuYurzGVpPEqjmmMSPci8kcxSkfhIiXfxuDfk6DqE8ODtSuLoRnvMZyD8yK9vOXgL5VpqQnQ%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a595d8783c4920f7-GRU
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+09:22:30.425 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate GET are stopped
+09:22:30.427 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - Stopping
+09:22:30.428 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+09:22:30.482 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+09:22:30.531 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulation-20261112132224103\simulation.log) from gatlingsimulation-20261112132224103
+09:22:30.565 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+09:22:30.582 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 10 lines
+09:22:30.626 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+09:22:30.693 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 10 lines
+13:24:43.955 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+13:24:45.021 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+13:24:48.235 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+13:24:48.235 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+13:24:48.261 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+13:24:48.340 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+13:24:48.445 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@71de530a has finished injecting
+13:24:48.451 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+13:24:49.832 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:24:49.840 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:24:50.133 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+13:24:50.133 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+13:24:50.384 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:24:50.393 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+13:24:52.436 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - karate.env system property was: null 
+13:24:52.436 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was: null 
+13:24:52.436 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:24:53.192 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 87
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Gerardo Hilpert","email":"daron62@test.com"}
+
+13:24:53.192 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 93
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Ernestina Gerlach","email":"margarito49@test.com"}
+
+13:24:53.192 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 83
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Tanja Rowe","email":"gustavo0@test.com"}
+
+13:24:54.949 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 1752
+1 < 201
+1 < Date: Thu, 12 Nov 2026 17:24:51 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 100
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-/QHt2zwIbQEzDaP2tcaPkw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"8ffe1a780da43f2ad5f35be653e404ad"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709993
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=F6tiXldM4h8y62q%2B2bMHbezSX36toOEzzLGZvJrdQMFXTm2s1A8WGjen%2FF7%2BN6kkEa5mZAX4TXh7W4oHgarTighBJ36%2BZzwgDQwxVNlmhHhw%2FqNgNSjARv2fAOrckgs%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5973b8abd3c1944-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709993,"name":"Gerardo Hilpert","email":"daron62@test.com","gender":"male","status":"active"}
+
+13:24:54.989 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709993
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:24:55.148 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 1953
+1 < 201
+1 < Date: Thu, 12 Nov 2026 17:24:52 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 96
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-5yADIImqqaqvL/Q6dSmE8Q=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"06f67fe8bf880a7ba78d520f893121db"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709994
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zZ0u1sfzfUaa5zblPxhZgCvprUhZSF%2Fc7mD6TpT%2BsiLQf77%2BVUEKb%2F15S2pMgCUV0IWuSLMxO0UeaST6KGmMdQcgARSDx3NIriXqvqxlJREm1EXEZpPEHNZChuMRw0o%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5973b8aaea3c81f-EZE
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709994,"name":"Tanja Rowe","email":"gustavo0@test.com","gender":"male","status":"active"}
+
+13:24:55.148 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 1951
+1 < 201
+1 < Date: Thu, 12 Nov 2026 17:24:52 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 106
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-/3Vq38/FXVrLPIa8T6dc+Q=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"8c315075de6a4d046d1d59120b6fc97f"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709995
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 297
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=WFLt2A5TYSEekawUcHI2ra%2B%2FRKKORUzczzgHIMxyFOaewuNMAOpvkHb11RWVuHjSrpRWzSjwGMEG1vtIFwIf5UWAAwvb9e5OET3TPMehgMfJxu7ISw4yWwrnpJmLHLQ%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5973b8aa85d69a7-EZE
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709995,"name":"Ernestina Gerlach","email":"margarito49@test.com","gender":"male","status":"active"}
+
+13:24:55.195 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709994
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:24:55.206 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709995
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:24:55.858 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 867
+2 < 204
+2 < Date: Thu, 12 Nov 2026 17:24:52 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-rkC7dhNYVivbmWUsbRbZJA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=19,cfOrigin;dur=283
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1gW9aGWSZURkBQ%2FCI1KSHyTfREJCN5MjARZsd%2BfxvUiSvfVzc88v1h364x15MR1iyurxiRB2oozEdBcpMF4bEs4V0SCK9HsyvWyPfMmaA1S5hXLQT94anWfw7yTM%2Bf8%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a5973b936d47b2b4-GIG
+2 < alt-svc: h3=":443"; ma=86400
+
+
+13:24:56.061 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 848
+2 < 204
+2 < Date: Thu, 12 Nov 2026 17:24:52 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-aMbLNW6cUwqu2w9h7x8taA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 298
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=24,cfOrigin;dur=355
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gsQQBGqdhsQv1WRVf2uGFHv2jnF5EOiDVaX6GWCnBx1UU4GMQvEEIoNkXp5QkvNfSpZJg1%2BuvzPSL%2BzZJr40Mpg%2Bck%2BTNXXQPgexKsuNLiNmUbPSlLWZSUHBc5FU3%2Fs%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a5973b949b7fc1a0-EZE
+2 < alt-svc: h3=":443"; ma=86400
+
+
+13:24:56.062 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 861
+2 < 204
+2 < Date: Thu, 12 Nov 2026 17:24:52 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-SrZR+B16dw4DaPOvKeV+eg=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=15,cfOrigin;dur=356
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UF0ptZ5RgJFamgOH0T9iMj3%2BTHdA7B2klVWHRRzksurEK0V%2FG3ghPTuZ9M35sHCbKssSeI44RHIomvLCpauFDz88VWOyZGj8Eyb85qfyoNJVrVsJelrDbAWJUO0nMGg%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a5973b9498441eaa-EZE
+2 < alt-svc: h3=":443"; ma=86400
+
+
+13:24:56.064 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate Delete are stopped
+13:24:56.068 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.g.core.controller.inject.Injector - Stopping
+13:24:56.069 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+13:24:56.115 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+13:24:56.155 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulationother-20261112172448134\simulation.log) from gatlingsimulationother-20261112172448134
+13:24:56.174 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+13:24:56.189 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 16 lines
+13:24:56.220 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+13:24:56.285 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 16 lines
+13:25:35.882 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+13:25:36.802 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+13:25:39.495 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+13:25:39.495 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+13:25:39.510 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+13:25:39.594 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+13:25:39.650 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@50085b90 has finished injecting
+13:25:39.655 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+13:25:40.970 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:25:40.977 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:25:41.209 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+13:25:41.209 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+13:25:41.635 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:25:41.643 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 77: @DeleteUser
+13:25:43.563 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:25:43.563 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:25:43.563 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  com.intuit.karate - karate.env system property was: null 
+13:25:44.440 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 87
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Jesusita Beatty","email":"zoila17@test.com"}
+
+13:25:44.440 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 84
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Lovella Raynor","email":"cruz5@test.com"}
+
+13:25:44.440 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > POST https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Content-Length: 85
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+{"gender":"male","status":"active","name":"Osvaldo Bauch","email":"odell16@test.com"}
+
+13:25:45.540 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 1091
+1 < 201
+1 < Date: Thu, 12 Nov 2026 17:25:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 97
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-UKpd7yTQ5x8ToKpZpRSdVw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"969de04cff1446ad9385e50fd762c582"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709997
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UwACQPMNr05yGAzwoXcWLaLe92kvfcju4zfd58htvVOTLaD41uD8ZPYpCUxj7CqxzNeVwE2zPLTLUl2ZzGotWVD0oMc64RFW2iQ3sqlZnt%2Fe6H7L%2BBLnuOL%2BgmFoEKU%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5973cca1df7f28d-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709997,"name":"Lovella Raynor","email":"cruz5@test.com","gender":"male","status":"active"}
+
+13:25:45.540 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - response time in milliseconds: 1095
+1 < 201
+1 < Date: Thu, 12 Nov 2026 17:25:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 100
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-AZ2N1qhnl6lysCa4ICcBUw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"7c2ea18068470dc4daeeb8f8b3b85100"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709996
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3c1YGT845LBuky2I4pEWH%2FSQoEivnuda8zVjGYm0bkBgJvJ19kQdACXQ%2FVIl5SOCM%2F3R12A4dg77ij28uQbRnCpwevpxNgDH4hNkYD%2BXsqLSprz%2BUwveEWLZH0EdiHI%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5973cca1f3831fd-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709996,"name":"Jesusita Beatty","email":"zoila17@test.com","gender":"male","status":"active"}
+
+13:25:45.572 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709997
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:25:45.572 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709996
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:25:46.040 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 1590
+1 < 201
+1 < Date: Thu, 12 Nov 2026 17:25:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 98
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-rSaKleohcBSW6C73pzbt+g=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"8db47793aba2e86b3c412c8deb6b2c96"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < location: https://gorest.co.in/public/v2/users/8709998
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ZdMBkBeGHo9yANoHq8JpgD1mmdS3IkFGMke%2BlsvZg9ltaxHOyUsgd3fW96pxOlE5ldfTqxfMkWU%2Bv6DYj%2BE22JaLNX%2BC6v22hdEcYb3YT9Gpgabh6q2G4d9%2FLMYXbUI%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a5973cca1a0564ab-GIG
+1 < alt-svc: h3=":443"; ma=86400
+{"id":8709998,"name":"Osvaldo Bauch","email":"odell16@test.com","gender":"male","status":"active"}
+
+13:25:46.047 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+2 > DELETE https://gorest.co.in/public/v2/users/8709998
+2 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+2 > Host: gorest.co.in
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:25:46.551 [GatlingSystem-akka.actor.default-dispatcher-6] DEBUG com.intuit.karate - response time in milliseconds: 977
+2 < 204
+2 < Date: Thu, 12 Nov 2026 17:25:43 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-BEfcDFCcrpBrwJOfCJArqg=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 298
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=15,cfOrigin;dur=362
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Q9n4qNrCig6PdTb8xPesjjtMsQ06IS7KZctEcX4KwAf8sMHj2jsTaG2ZonRe%2FJFHVFqZWyiKrHN0RT4CzOU48TqIgBiBEigWxFRBfjzT5ilUT44hfGNRJsapR2Q3ps0%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a5973ccfbdc29803-EZE
+2 < alt-svc: h3=":443"; ma=86400
+
+
+13:25:46.551 [GatlingSystem-akka.actor.default-dispatcher-4] DEBUG com.intuit.karate - response time in milliseconds: 977
+2 < 204
+2 < Date: Thu, 12 Nov 2026 17:25:43 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Xn/mFs4xE1tuSdc00kEt8A=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 299
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=7,cfOrigin;dur=361
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pHP1LycXjmo22EtgWVLLrUHcAGy0w6yf8X1ipbgL%2F1akptvb%2BUUXCPfSsQ4Zb354qxOMpcG2ko2VMX3NAGhnZW%2BxcoMbE270EuWEsHwOsOH4vheO7Z6bgVdhoPsqD3w%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a5973ccfbdc9ed09-EZE
+2 < alt-svc: h3=":443"; ma=86400
+
+
+13:25:46.853 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 804
+2 < 204
+2 < Date: Thu, 12 Nov 2026 17:25:43 GMT
+2 < Connection: keep-alive
+2 < Cache-Control: no-cache
+2 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-nNaTzXzMlzUae6vA7LTc2A=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+2 < deprecation: @1793491200
+2 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+2 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+2 < referrer-policy: strict-origin-when-cross-origin
+2 < strict-transport-security: max-age=63072000; includeSubDomains
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-permitted-cross-domain-policies: none
+2 < x-ratelimit-limit: 300
+2 < x-ratelimit-remaining: 298
+2 < x-ratelimit-reset: 0
+2 < x-xss-protection: 0
+2 < cf-cache-status: DYNAMIC
+2 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+2 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+2 < Server-Timing: cfEdge;dur=8,cfOrigin;dur=356
+2 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=K%2BfloOGUJxoNbHpJKXFd10VKli0d%2BMecuMidtBLKfWZOW9uTUf7cHmMVqROPEHVbuiFYw1V4JKWyKvU%2B2v00dYmruf76aTF%2B7fzBGcFRRtaE8VFiX75qtKv76OsQess%3D"}]}
+2 < Server: cloudflare
+2 < CF-RAY: a5973cd20aa8a787-EZE
+2 < alt-svc: h3=":443"; ma=86400
+
+
+13:25:46.857 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate Delete are stopped
+13:25:46.859 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - Stopping
+13:25:46.862 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+13:25:46.953 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+13:25:47.007 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulationother-20261112172539420\simulation.log) from gatlingsimulationother-20261112172539420
+13:25:47.060 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+13:25:47.082 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 16 lines
+13:25:47.121 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+13:25:47.191 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 16 lines
+13:28:13.938 [main] INFO  i.g.c.config.GatlingConfiguration$ - Gatling will try to load 'gatling.conf' config file as ClassLoader resource.
+13:28:14.765 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+13:28:18.006 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initializing
+13:28:18.006 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initializing
+13:28:18.028 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.g.c.stats.writer.ConsoleDataWriter - Initialized
+13:28:18.044 [GatlingSystem-akka.actor.default-dispatcher-6] INFO  i.g.c.stats.writer.LogFileDataWriter - Initialized
+13:28:18.098 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.c.c.inject.open.OpenWorkload - Scenario io.gatling.core.scenario.Scenario@51680b16 has finished injecting
+13:28:18.101 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  i.g.core.controller.inject.Injector - All scenarios have finished injecting
+13:28:19.494 [gatling-1-1] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:28:19.503 [gatling-1-2] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:28:19.795 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+13:28:19.795 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+13:28:20.085 [gatling-1-3] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:28:20.093 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  c.intuit.karate.core.FeatureRuntime - classpath:examples/gorest/users.feature - call by tag at line 22: @GetUser
+13:28:22.308 [GatlingSystem-akka.actor.default-dispatcher-8] INFO  com.intuit.karate - karate.env system property was: null 
+13:28:22.308 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:28:22.308 [GatlingSystem-akka.actor.default-dispatcher-7] INFO  com.intuit.karate - karate.env system property was: null 
+13:28:23.318 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:28:23.318 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:28:23.318 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - request:
+1 > GET https://gorest.co.in/public/v2/users
+1 > Accept: application/json
+1 > Content-Type: application/json
+1 > Authorization: Bearer 587af75efde5f56f7b05bdf01877ca04490016ec9ffc5611020013e2f46df5e1
+1 > Host: gorest.co.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:28:24.896 [GatlingSystem-akka.actor.default-dispatcher-7] DEBUG com.intuit.karate - response time in milliseconds: 1572
+1 < 200
+1 < Date: Thu, 12 Nov 2026 17:28:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-M+q330lEwmaSN7lcIGNnqA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 298
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YVPpFU8rvlDOz3%2FCtkDn7Tjhi0C8V3mJYqTc0Pkr%2BIpuIxx8H0QtpdmNvAqDrEadFan0GFtaVS6RXi5EjWPZDb%2FyQ9gmHMMlB7LeNsqZfmvxZnP3tp%2BRlxTO9r9Nens%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a59740a9acf85040-EZE
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+13:28:24.896 [GatlingSystem-akka.actor.default-dispatcher-8] DEBUG com.intuit.karate - response time in milliseconds: 1571
+1 < 200
+1 < Date: Thu, 12 Nov 2026 17:28:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-ZCgXYIbRshvQlbLj09PSyQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 299
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YoMG4v9C2YJqrxL4%2FLU1wXaTzqZdRWDQWPQBgciTFZ5N4PHsDost3tyPpU3T6x34%2FGl5M1TvevGCM%2Fa5tYVdiljDAd5NcgeypoHP1ajEvQgq53gbIG9MCzfwUIxQ%2FJA%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a59740a999fa200e-EZE
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+13:28:24.979 [GatlingSystem-akka.actor.default-dispatcher-5] DEBUG com.intuit.karate - response time in milliseconds: 1657
+1 < 200
+1 < Date: Thu, 12 Nov 2026 17:28:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-PDnO7raNqgtYnDX7d4OXEw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+1 < deprecation: @1793491200
+1 < etag: W/"e3c7332c96bc706ac61da373479f52b9"
+1 < feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+1 < link: <https://www.gorest.co.in/docs/v2>; rel="deprecation"; type="text/html"
+1 < referrer-policy: strict-origin-when-cross-origin
+1 < strict-transport-security: max-age=63072000; includeSubDomains
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-links-current: https://gorest.co.in/public/v2/users?page=1
+1 < x-links-next: https://gorest.co.in/public/v2/users?page=2
+1 < x-links-previous: 
+1 < x-pagination-limit: 10
+1 < x-pagination-page: 1
+1 < x-pagination-pages: 298
+1 < x-pagination-total: 2979
+1 < x-permitted-cross-domain-policies: none
+1 < x-ratelimit-limit: 300
+1 < x-ratelimit-remaining: 297
+1 < x-ratelimit-reset: 0
+1 < x-xss-protection: 0
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < cf-cache-status: DYNAMIC
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=w8c7qf4MHaTzo03nuf0gaif%2Beg%2B3Yc4b2z51ALIIHzto2MrVRKVUJJVXrNBnmrCFEK%2BeA1q8PThdJ9cHTI2zU21Ckx2rgY6nZIERT3OiVgpSVHWySJZIdHzHNmlsXsg%3D"}]}
+1 < Server: cloudflare
+1 < CF-RAY: a59740a9986a1e7c-EZE
+1 < alt-svc: h3=":443"; ma=86400
+[{"id":8709327,"name":"Jame Bartoletti","email":"seth1@test.com","gender":"male","status":"active"},{"id":8709326,"name":"Delena Lemke","email":"brandee6@test.com","gender":"male","status":"active"},{"id":8709325,"name":"Lila Mitchell","email":"adalberto25@test.com","gender":"male","status":"active"},{"id":8708453,"name":"Vivaan Menon","email":"vivaan_menon_94278@pillai.example","gender":"male","status":"inactive"},{"id":8708452,"name":"Saanvi Sharma","email":"saanvi_sharma_38580@banerjee.example","gender":"female","status":"active"},{"id":8708451,"name":"Aarav Kapoor","email":"aarav_kapoor_36023@bhat.example","gender":"male","status":"active"},{"id":8708450,"name":"Lakshmi Kapoor","email":"lakshmi_kapoor_33688@desai.example","gender":"female","status":"active"},{"id":8708449,"name":"Rohan Gupta","email":"rohan_gupta_81533@reddy.example","gender":"male","status":"inactive"},{"id":8708448,"name":"Deepa Kumar","email":"deepa_kumar_13400@iyer.example","gender":"female","status":"inactive"},{"id":8708447,"name":"Suresh Mishra","email":"suresh_mishra_60912@bose.example","gender":"male","status":"active"}]
+
+13:28:24.984 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - All users of scenario Prueba de carga con Karate GET are stopped
+13:28:24.986 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  i.g.core.controller.inject.Injector - Stopping
+13:28:24.992 [GatlingSystem-akka.actor.default-dispatcher-4] INFO  i.gatling.core.controller.Controller - Injector has stopped, initiating graceful stop
+13:28:25.061 [GatlingSystem-akka.actor.default-dispatcher-5] INFO  akka.actor.CoordinatedShutdown - Running CoordinatedShutdown with reason [ActorSystemTerminateReason]
+13:28:25.136 [main] INFO  i.g.charts.stats.LogFileReader$ - Collected List(C:\Users\camila\Downloads\GITHUB.005\QA2\target\gatling\gatlingsimulation-20261112172817906\simulation.log) from gatlingsimulation-20261112172817906
+13:28:25.164 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass
+13:28:25.177 [main] INFO  i.gatling.charts.stats.LogFileReader - First pass done: read 10 lines
+13:28:25.197 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass
+13:28:25.286 [main] INFO  i.gatling.charts.stats.LogFileReader - Second pass: read 10 lines

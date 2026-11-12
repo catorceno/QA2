@@ -1,0 +1,36 @@
+{
+  "simulation": "performance.GatlingSimulationOther",
+  "simulationId": "gatlingsimulationother-20261112172539420",
+  "start": 1794504341172,
+  "description": "",
+  "scenarios": ["Prueba de carga con Karate Delete"],
+  "assertions": [
+{
+  "path": "Global",
+  "target": "mean of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [1000.0],
+  "result": false,
+  "message": "Global: mean of response time is less than or equal to 1000.0",
+  "actualValue": [1089.0]
+},
+{
+  "path": "Global",
+  "target": "percentage of successful events",
+  "condition": "is greater than or equal to",
+  "expectedValues": [99.0],
+  "result": true,
+  "message": "Global: percentage of successful events is greater than or equal to 99.0",
+  "actualValue": [100.0]
+},
+{
+  "path": "DELETE /public/v2/users/{userid}",
+  "target": "max of response time",
+  "condition": "is less than or equal to",
+  "expectedValues": [2000.0],
+  "result": true,
+  "message": "DELETE /public/v2/users/{userid}: max of response time is less than or equal to 2000.0",
+  "actualValue": [977.0]
+}
+  ]
+}

@@ -1,3 +1,4 @@
+@Posts
 Feature: CRUD para posts
 
   Background:

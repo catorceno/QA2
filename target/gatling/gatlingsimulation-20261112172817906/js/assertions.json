@@ -1,0 +1,10 @@
+{
+  "simulation": "performance.GatlingSimulation",
+  "simulationId": "gatlingsimulation-20261112172817906",
+  "start": 1794504499752,
+  "description": "",
+  "scenarios": ["Prueba de carga con Karate GET"],
+  "assertions": [
+
+  ]
+}

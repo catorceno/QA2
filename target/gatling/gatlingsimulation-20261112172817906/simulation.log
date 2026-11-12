@@ -1,0 +1,10 @@
+RUN	performance.GatlingSimulation	gatlingsimulation	1794504497906	 	3.9.5
+USER	Prueba de carga con Karate GET	START	1794504499752
+USER	Prueba de carga con Karate GET	START	1794504499752
+USER	Prueba de carga con Karate GET	START	1794504500092
+REQUEST		GET /public/v2/users	1794504503320	1794504504891	OK	 
+REQUEST		GET /public/v2/users	1794504503319	1794504504891	OK	 
+USER	Prueba de carga con Karate GET	END	1794504504920
+USER	Prueba de carga con Karate GET	END	1794504504921
+REQUEST		GET /public/v2/users	1794504503320	1794504504977	OK	 
+USER	Prueba de carga con Karate GET	END	1794504504983
